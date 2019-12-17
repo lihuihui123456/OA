@@ -1,0 +1,41 @@
+@charset "utf-8";
+#drag{ 
+    position: relative;
+    background-color: #e8e8e8;
+    width: 370px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#drag .handler{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+.handler_bg{
+    background: #fff url("../images/pass.png") no-repeat center;
+}
+.handler_ok_bg{
+    background: #fff url("../images/ok.png") no-repeat center;
+}
+#drag .drag_bg{
+    /*background-color: #7ac23c;*/
+    background-color: #D52845;
+    height: 50px;
+    width: 0px;
+}
+#drag .drag_text{
+    position: absolute;
+    top: 0px;
+    width: 370px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -o-user-select:none;
+    -ms-user-select:none; 
+}
+

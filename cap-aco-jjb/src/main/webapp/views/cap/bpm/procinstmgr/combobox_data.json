@@ -1,0 +1,19 @@
+[{    
+    "id":"id_",    
+    "text":"流程实例id"   
+},{    
+    "id":"start_time_",    
+    "text":"开始时间"   
+},{    
+    "id":"end_time_",    
+    "text":"结束时间"  
+},{
+    "id":"user_name",
+    "text":"发起人"   
+},{
+    "id":"biz_title_",    
+    "text":"事项"   
+},{    
+    "id":"state_",    
+    "text":"运行状态"   
+}]

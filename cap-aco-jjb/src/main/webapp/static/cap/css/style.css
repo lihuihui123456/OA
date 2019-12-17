@@ -1,0 +1,501 @@
+@charset "utf-8";
+*{
+	font-family: "Microsoft yahei";
+	font-size:14px;
+}
+body{
+	padding:0;
+	width:100%;
+	height:100%;
+	overflow:auto;	
+}
+
+.padt-10{
+	padding-top:10px;
+}
+.marl-10{
+	margin-left:10px;
+}
+.mart-10{
+	margin-top:10px;
+}
+.clearfix{
+	clear:both;
+	overflow:hidden;
+	zoom:1;
+}
+/*框架和边框样式*/
+.layout-split-west {
+  border-right: 0px solid #fff;
+}
+.panel-header {
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+}
+.panel-header, .panel-body {
+  border-color: #ddd;
+}
+.panel-body {
+  border-width: 0px;
+}
+.panel-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1a1a;
+  height: 16px;
+  line-height: 16px;
+}
+/*弹框样式*/
+.window {
+  background: #c4d6e8;
+  border-radius: 4px;
+  font-size:14px;
+}
+.window-header {
+  padding: 8px 15px;
+}
+.window-body{
+	background:#f2f4f7;
+	border-width:0px;
+}
+.window-form{
+	padding:10px;
+}
+.window-tool{
+	width:100%;
+	padding:10px 0;
+	text-align:center;
+	background:#fff;
+	border-width: 0px;
+}
+.window-tool .l-btn,.dialog-button .l-btn{
+	background:#0e5faa;
+	color:#fff;	
+}
+.window-tool .l-btn-text{
+	margin:0 15px;
+}
+.window-form .panel .panel-header,.window-form .panel .panel-body{
+	background:#f2f4f7;
+}
+.window-header .panel-title{
+	color: #0e5faa;
+	padding:5px 0;
+}
+.panel-tool-close {
+  background: url('../plugins/easyui/themes/metro/images/panel_tools_close.png') no-repeat center;
+}
+.window-form .panel-header{
+	border-width:0 ;	
+}
+.window-form .panel-header .panel-title{
+	color: #0e5faa;
+	border-left:5px solid #0e5faa;
+	padding-left:10px;
+	
+}
+.form-table-header{
+	width:100%;
+	padding-left:10px;
+}
+.window-form .form-table{
+	font-size:14px;
+	width:100%;
+}
+.window-form .form-table td{
+	white-space:nowrap;
+	margin-bottom:5px;
+}
+.window-form .form-table td .input_txt,.window-form .form-table td .select_txt{
+	height:30px;
+	line-height:30px;
+	vertical-align: middle;
+	width:200px;
+	border-radius:4px;
+	border:1px solid #ddd;
+	background:#fff;
+}
+.textbox,.easyui-validatebox {
+	height:30px!important;
+	border-radius:4px;
+	border:1px solid #ddd;
+	background:#fff;	
+}
+.easyui-validatebox{
+	padding:0 10px;
+}
+.textbox .textbox-text {
+	height:30px!important;
+	line-height:30px!important;
+}
+ .textbox .textbox-addon{
+	top:0px;
+}
+.validatebox-invalid{
+	/*border-width:0;*/
+	background:#fff;
+}
+.input-must {
+	font-size:14px;
+	color:red;
+	vertical-align: middle;
+	margin-right:5px;
+}
+.window-form .form-table .input-blank{
+	margin-right:12px;
+}
+.window-form .form-table .input-label{
+	width:114px;
+	width:110px\0;
+}
+.usable_role,.selected_role{
+	border:1px solid #ddd;
+	border-radius:4px;
+	width:265px;
+	float:left;
+	background:#fff;
+}
+.usable_role{
+	margin-left:15px;
+}
+.role_con{
+	height:140px;
+}
+.role_con > select{
+	width:265px;
+	height:140px;
+	border:none;
+	padding:5px 10px;
+}
+.role_con > select:focus{
+	outline:none;
+}
+.role_con > select option{
+	height:20px;
+	padding-top:3px;
+}
+.operate_btn{
+	width:85px;
+	float:left;
+	padding-left:30px;
+	padding-top:10px;
+}
+.operate_btn input{
+	width:50px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	margin-bottom:10px;
+	color:#fff;
+	border:none;
+	border-radius:4px;
+}
+.operate_btn input.green{
+	background:#00b285;
+}
+.operate_btn input.red{
+	background:#e46863;
+}
+.role_title{
+	color:#0e5faa;
+	border-bottom:1px solid #ddd;
+	padding:5px 10px;
+}
+/*搜索框更改样式*/
+.search-tree,.search-input{
+	height:30px;
+ 	position: relative;
+}
+.searchbox {
+	height:30px!important;
+}
+.search-tree .textbox-addon,.search-input .textbox-addon{
+	position:absolute;
+	left:0!important;
+	margin-top:5px;
+	margin-left:5px;
+	width:18px;
+	height:18px;
+}
+.search-tree .textbox-text ,.search-input .textbox-text{
+	width:100%!important;
+	height:100%!important;
+	line-height:30px!important;
+	padding-left:30px!important;
+}
+.searchbox{
+	width:100%!important;	
+}
+.search-tree .searchbox{
+	border:none;
+	border-bottom:1px solid #ddd;
+	border-radius:0;
+}
+.search-tree .textbox-text{
+	background:#f4f4f4;
+}
+.search-input {
+	width:240px;
+	float:right;
+	margin-right:2px;
+	margin-bottom:10px;
+	
+}
+.search-input .searchbox{
+	border-radius:4px;	
+}
+.searchbox-button {
+	background: url('../plugins/easyui/themes/icons/btn_search.png') no-repeat center 3px;
+}
+/*按钮样式*/
+.datagrid-toolbar{
+	padding:0;
+	border:none;
+}
+.tool_btn{
+	float:left;
+	margin-bottom:10px;
+}
+.l-btn {
+  color: #0e5faa;
+  border-radius: 4px;
+  border: 1px solid #0e5faa;
+}
+.l-btn-plain {
+  background: #fff;
+  padding: 3px;
+}
+.l-btn-plain:hover {
+  background: #0e5faa;
+  color: #fff; 
+  padding:2px 3px;
+}
+.l-btn:hover {
+  background: #0e5faa;
+  color: #fff;
+  border: 1px solid #0e5faa;
+}
+.l-btn .icon-add {
+  background: url('../plugins/easyui/themes/icons/btn_add.png') no-repeat center center;
+}
+.l-btn:hover .icon-add {
+  background: url('../plugins/easyui/themes/icons/edit_add.png') no-repeat center center;
+}
+.l-btn .icon-edit {
+  background: url('../plugins/easyui/themes/icons/btn_pencil.png') no-repeat center center;
+}
+.l-btn:hover .icon-edit {
+  background: url('../plugins/easyui/themes/icons/pencil.png') no-repeat center center;
+}
+.l-btn .icon-remove {
+  background: url('../plugins/easyui/themes/icons/btn_remove.png') no-repeat center center;
+}
+.l-btn:hover .icon-remove {
+  background: url('../plugins/easyui/themes/icons/edit_remove.png') no-repeat center center;
+}
+.l-btn .icon-top {
+  background: url('../plugins/easyui/themes/icons/btn_top.png') no-repeat center center;
+}
+.l-btn:hover .icon-top {
+  background: url('../plugins/easyui/themes/icons/top.png') no-repeat center center;
+}
+.l-btn .icon-downp {
+  background: url('../plugins/easyui/themes/icons/btn_downp.png') no-repeat center center;
+}
+.l-btn:hover .icon-downp {
+  background: url('../plugins/easyui/themes/icons/downp.png') no-repeat center center;
+}
+.l-btn .icon-search {
+  background: url('../plugins/easyui/themes/icons/btn_search.png') no-repeat center center;
+}
+.l-btn:hover .icon-search {
+  background: url('../plugins/easyui/themes/icons/search.png') no-repeat center center;
+}
+/*页码部分按钮样式*/
+.pagination .l-btn-plain{
+	background:#0e5faa;
+}
+.pagination td a{
+	margin-left:2px;
+}
+.pagination-page-list,.pagination .pagination-num {
+	padding:4px 2px;
+	border-radius:4px;
+}
+.pagination .pagination-num{
+	padding: 4px 8px;
+}
+.datagrid-toolbar, .datagrid-pager {
+   background: #fff; 
+}
+.datagrid .datagrid-pager{
+	border-width:0px 1px 1px 1px;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.pagination-btn-separator{
+	border-left-width:0;
+	border-right-width:0;
+}
+.pagination table {
+  float: left;
+  height: 40px;
+}
+.pagination-info{
+	height:40px;
+	line-height:40px;
+}
+/*树更改样式*/
+.tree{
+	margin-top:5px;
+}
+.tree-node{
+	height:30px;
+}
+.tree-title {
+  height: 30px;
+  line-height:30px;
+}
+.tree-node-hover {
+   background: #d3dff1;
+   border:none;
+   color:#515459;
+}
+.tree-node-selected {
+  background: #d3dff1;
+  border:none;
+  color:#515459;
+}
+.tree-checkbox0{
+	background-position:-208px -16px;
+	border-top: 4px solid #fff;
+}
+.tree-node-hover .tree-checkbox0,.tree-node-selected .tree-checkbox0,
+.tree-node-hover .tree-checkbox1,.tree-node-selected .tree-checkbox1,
+.tree-node-hover .tree-checkbox2,.tree-node-selected .tree-checkbox2{
+	border-top: 4px solid #d3dff1;
+}
+.tree-checkbox1{
+	background-position:-224px -16px;
+	border-top: 4px solid #fff;
+}
+.tree-checkbox2{
+	background-position:-240px -16px;
+	border-top: 4px solid #fff;
+}
+.tree-expanded{
+	background-position:-18px 6px;
+}
+.tree-expanded-hover{
+	background-position:-50px 6px;
+}
+.tree-collapsed{
+	background-position:0 6px;
+}
+.tree-collapsed-hover{
+	background-position:-32px 6px;
+}
+/*正文样式*/
+.page_menu{
+	width: 260px;
+	border:1px solid #ddd;
+}
+.content{
+	padding-left:10px;
+	padding-right:10px;
+}
+.datagrid-view{
+	border:1px solid #ddd;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+}
+.datagrid-view2{
+	border-right:2px solid #ddd;
+}
+.datagrid-header,.datagrid-htable{
+	height:35px!important;
+	background: #f4f4f4;
+}
+.datagrid-header-row{
+	height:36px!important;
+	background:#f4f4f4;
+	color:#2c3749;
+}
+.datagrid-header td{
+	border-color:#ddd;
+}
+.datagrid-header td, .datagrid-body td, .datagrid-footer td{
+	border-width:0px;
+}
+.datagrid-header td.datagrid-header-over{
+	background:#f2f2f2;
+}
+.datagrid-row-alt {
+  background: #f2f3f4;
+}
+.datagrid-row-selected {
+  background: #d3dff1;
+  color: #000;
+}
+.l-btn-icon:hover{
+	margin-top:-8px;
+}
+.tabs-header,.tabs-panels,.tabs-panels{
+	border-color:#fff!important;
+}
+.tabs-header{
+	background:#fff!important;
+}
+.tabs{
+	padding-left:10px;
+}
+/*表格样式*/
+.table-style{
+	width:100%;
+	font-size:14px;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+.table-style tr{
+	height:35px;
+}
+.table-style td{
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	text-align:left;
+	padding:0 10px;
+}
+.table-style th{
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+	text-align:left;
+	background:#e3ebf7;
+	padding:0 10px;
+}
+.table-style th.Theader{
+	background:#e4e4e4;
+	text-align:center;
+}
+.table-style .textbox{
+	width:100%;
+	float:left;
+	border-width:0;
+	border-radius:0;
+}
+.clear{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.6;
+	color: gray;
+	position: absolute;
+  	top: 0;
+  	right: 0;
+  	background:url(../plugins/easyui/themes/icons/btn_remove.png) no-repeat center center;
+}
+.clear:hover{
+	opacity: 1;
+}

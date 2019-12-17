@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*--来自  skin-red.css --start----*/
+.panel .panel-heading > h2 > i {
+	 color:#fe7676;
+}
+.todo_views{
+	color:#fc5656;
+}
+/*--来自  skin-red.css --end----*/
+/*--来自  lead.css --start----*/
+.btn_calendar a{
+	color:#d33237;
+}
+.custom-menu .unchecked,.custom-one .unchecked{
+	background: url(../images/unchecked.png) no-repeat;
+}
+.custom-menu .checked,.custom-one .checked{
+	background: url(../images/checked.png) no-repeat;
+}
+.custom-one > a{
+	color:#d33237;
+}
+.panel-other > .panel-heading{
+    border-bottom: 1px solid #fc5656;
+}
+.panel-other > .panel-heading > .more a{
+    color:#fe7676;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-heading .refresh > a{
+	color:#fc5656;
+}
+.small_tabs>li>a:hover{
+    color: #d33237;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 0px solid #fc5656;
+    background:url(../images/triangle_up.png) no-repeat center bottom;
+}
+.table span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.table-hover > tbody > tr:hover{
+    background-color:#fcf1f1;    
+}
+.lead_tabs > li > a:hover {
+   border-color: #D9D9D9;
+   border-bottom-color:transparent;
+   color:#fc5656;  
+}
+.lead_tabs > li.active > a, .lead_tabs > li.active > a:hover, .lead_tabs > li.active > a:focus {
+   border-color: #D9D9D9;
+   border-bottom-color:transparent;
+   color: #fc5656; 
+}
+/*--来自  lead.css --start----*/
+#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
+	background:url(../images/icons.png) no-repeat;
+}
+#fb7 .fb7-menu li {		
+    background-position: -39px 0px ;
+}
+#fb7 .fb7-tooltip{
+	background: -webkit-linear-gradient(#fc5656,#d33237)repeat scroll 0 0 rgba(0, 0, 0, 0);		 
+ 	background: -o-linear-gradient(#fc5656,#fc5656) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: -moz-linear-gradient(#fc5656,#d33237) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: linear-gradient(#fc5656,#d33237) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #fc5656;
+}

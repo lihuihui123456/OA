@@ -1,0 +1,22 @@
+[{    
+    "id":"id_", 
+    "text":"任务id"   
+},{    
+    "id":"proc_inst_id_",  
+    "text":"流程实例id"   
+},{    
+    "id":"biz_title_",  
+    "text":"事项"   
+},{    
+    "id":"name_",  
+    "text":"环节名称"   
+},{    
+    "id":"user_name",  
+    "text":"执行人"   
+},{
+    "id":"create_time_",  
+    "text":"创建时间"   
+},{    
+    "id":"due_date_", 
+    "text":"到期时间"   
+}]

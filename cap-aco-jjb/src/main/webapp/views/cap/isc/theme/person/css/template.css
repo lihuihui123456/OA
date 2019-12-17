@@ -1,0 +1,110 @@
+/* 耿杰创建于2016-05-13 */
+html,body,div,p{
+    margin: 0;
+    padding: 0;
+    font-family:'Microsoft yahei';
+}
+img{
+    border:0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.font18{
+    font-size: 18px;
+}
+a:focus{
+	outline:none;
+}
+a{
+	cursor:pointer;
+}
+/*模板部分的样式*/
+.template_eg{
+    margin-bottom:30px;
+    text-align: center;
+    position: relative;
+}
+.template_eg a{
+    display:block;
+}
+.template_eg a:hover{
+    background:#7f7f7f;
+    text-decoration: none;
+}
+.template_eg a span{
+    display:none; 
+    text-align:center; 
+    font-size:14px;
+}
+.template_eg a:hover span{
+    color:#FFF;
+    display:block;
+    width: 100%;
+    background:#7f7f7f;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    line-height:30px;
+}
+.template_eg a input{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.template_eg a img{
+    width: 100%;
+}
+.template_menu{
+	width:120px;
+	border:1px solid #ddd;
+	position:fixed;
+	height:100%;
+}
+.template_menu > h5{
+	font-size:14px;
+	font-weight:600;
+	border-bottom:1px solid #fe7676;
+	line-height:20px;
+	cursor:pointer;
+}
+.template_menu > h5 i{
+	margin:0 5px;
+	color:#fe7676;
+}
+.template_menu > h5 i.icon{
+	float:right;
+	margin-top:5px;
+}
+.template_menu li{
+	margin:9px;
+	text-align:center;
+	background:#ddd;
+}
+.template_menu img{
+	padding:1px;
+	width:100%;
+}
+
+.template_con{
+	padding-left:140px;
+	position:absolute;
+	z-index:-100;
+	width:99%;
+}
+.template_con .panel{
+    height: 260px;
+    background:#ddd;
+    margin-bottom:20px;
+    border:none;
+}
+.template img{
+	width:100%;
+	height:260px;
+}
+.template_title{
+	height:40px;
+	line-height:40px;
+}
+

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*--来自  skin-red.css --start----*/
+.panel .panel-heading > h2 > i {
+	 color:#62ac5f;
+}
+.todo_views{
+	color:#62ac5f;
+}
+/*--来自  skin-red.css --end----*/
+/*--来自  lead.css --start----*/
+.btn_calendar a{
+	color:#62ac5f;
+}
+.custom-menu .unchecked,.custom-one .unchecked{
+	background: url(../images/unchecked.png) no-repeat;
+}
+.custom-menu .checked,.custom-one .checked{
+	background: url(../images/checked.png) no-repeat;
+}
+.custom-one > a{
+	color:#62ac5f;
+}
+.panel-other > .panel-heading{
+    border-bottom: 1px solid #62ac5f;
+}
+.panel-other > .panel-heading > .more a{
+    color:#62ac5f;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-heading .refresh > a{
+	color:#62ac5f;
+}
+.small_tabs>li>a:hover{
+    color: #62ac5f;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #62ac5f;
+    border-bottom: 0px solid #62ac5f;
+    background:url(../images/triangle_up.png) no-repeat center bottom;
+}
+.table span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.table-hover > tbody > tr:hover{
+    background-color:#e3eae2;    
+}
+.lead_tabs > li > a:hover {
+  border-color: #D9D9D9;
+  border-bottom-color:transparent;
+  color:#62ac5f;  
+}
+.lead_tabs > li.active > a, .lead_tabs > li.active > a:hover, .lead_tabs > li.active > a:focus {
+   border-color: #D9D9D9;
+   border-bottom-color:transparent;
+   color: #62ac5f; 
+}
+/*--来自  lead.css --start----*/
+#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
+	background:url(../images/icons.png) no-repeat;
+}
+#fb7 .fb7-menu li {		
+    background-position: -39px 0px ;
+}
+#fb7 .fb7-tooltip{
+	background: -webkit-linear-gradient(#50ce4b,#62ac5f)repeat scroll 0 0 rgba(0, 0, 0, 0);		 
+ 	background: -o-linear-gradient(#50ce4b,#62ac5f) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: -moz-linear-gradient(#50ce4b,#62ac5f) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: linear-gradient(#50ce4b,#62ac5f) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #50ce4b;
+}

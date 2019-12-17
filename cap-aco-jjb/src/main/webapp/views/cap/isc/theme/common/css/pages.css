@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* gengjie创建于2016-05-13 */
+html,body,div,p{
+    margin: 0;
+    padding: 0;
+    font-family:'Microsoft yahei';
+}
+body{
+	 background-color:#f2f4f8;
+}
+img{
+    border:0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.font18{
+    font-size: 18px;
+}
+.font16{
+    font-size: 16px;
+}
+.font22{
+    font-size: 22px;
+}
+a:focus{
+	outline:none;
+}
+a{
+	cursor:pointer;
+}
+.bor_top{
+    border-top:1px solid transparent;
+}
+#search-input{
+	display:none;
+	position:absolute;
+	top:8px;
+	right:5px;	
+}
+#search-input > input{
+	border:1px solid #fff;
+	height:30px;
+	line-height:30px;
+	width:200px;
+	padding:0 20px 0 10px;
+	border-radius:4px;
+	background:transparent;
+	color:#fff;
+	position:absolute;
+	top:8px;
+	right:5px;
+}
+#search-input > i{
+	position: absolute;
+    top: 14px;
+    right: 13px;
+    color: #FFF;
+    font-size: 18px;
+    cursor: pointer;
+}
+#search-input > input:focus{
+	outline:none;
+}
+/*头部搜索部分文本框中提示文字的颜色*/
+#search-input::-moz-placeholder {
+	color: #fff;
+	opacity: 1
+}
+#search-input:-ms-input-placeholder {
+	color: #fff
+}
+#search-input::-webkit-input-placeholder {
+	color: #fff
+}
+/*tab标签样式---一级标签*/
+.page-tabs{
+	width:auto;
+    overflow:hidden;
+    height:37px;
+}
+.nav-tabs{
+	border-bottom:none;
+}
+.my_tabs{
+    /*9.9字体大小由16px改为14px*/
+    font-size: 14px;
+    /*margin-top: 8px;
+    margin-bottom: 10px;*/
+    font-weight:600;
+    position:relative;
+    padding-left:50px; 
+    float:left;  
+}
+.my_tabs > li {
+	margin-top: 1px;
+    /* margin-left: 5px; */
+    /*9.9高度由42px改为36px*/
+    margin-bottom: 0;
+}
+.my_tabs>li.active>a,
+.my_tabs>li.active>a:focus,
+.my_tabs>li.active>a:hover,
+.my_tabs>li>a:hover{
+    cursor: default;
+    background-color: #fff;
+    border:1px solid transparent;   
+    cursor:pointer;
+}
+.my_tabs >li > a {
+    color: #576069;
+    /* margin-right: 2px; */
+    line-height: 1.5;
+    border: 1px solid transparent;
+    display: inline-block;
+    background-color:#fff;
+    /*9.9增加*/
+    padding:6px 14px 5px 14px;
+}
+.my_tabs >li > a.close{
+    margin-top: -2px;
+    padding-left: 0;
+}
+.roll-nav{
+	position: absolute;
+    top: 8px;
+    cursor: pointer;
+    z-index: 2;
+    color:#d33237;
+}
+.tab-left{
+    left: 41px;
+}
+.tab-right{
+    right: 80px;
+    background: #FFF;
+    width: 30px;
+    text-align: center;
+}
+.roll-right{
+	position: absolute;
+	top: 0;
+	right:0;
+	cursor: pointer;
+    z-index: 2;
+	width: 80px;
+	height: 37px;
+	line-height: 37px;
+	background: #F2F4F8;
+    text-align: center;
+    border-left: 1px solid #DDD;
+}
+.dropdown-menu-right{
+	top:35px;
+}
+.blank-white{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 37px;
+    width: 60px;
+    background: #FFF;
+}
+.panel-other{
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+.panel-other > .panel-heading{
+    height: 40px;
+    /*border-bottom: 2px solid #ccd5d7;
+    padding-left: 70px;*/
+    position: relative;
+}
+.panel-other > .panel-heading > h2{
+	color:#576069;
+}
+.panel-other > .panel-heading img{
+	margin-right:10px;
+	width:25px;
+	height:25px;	
+}
+.panel .panel-heading > h2{
+	padding-left:33px;
+}
+.panel .panel-heading > h2 > i {
+  	width: 32px;
+  	display: inline-block;
+  	font-size: 28px;
+  	position:absolute;
+	top:2px;
+	left:-1px;
+}
+.panel-other > .panel-heading >.more{
+	position:absolute;
+	top:2px;
+	right:10px;
+}
+.panel-other > .panel-heading > .more a{
+	padding:2px 12px;
+}
+.panel-other > .panel-heading >.more1{
+	right:80px; 
+}
+.panel-other li.list-group-item{
+    position: relative;
+    display: block;
+    /*padding:9px 23px 改为 padding:8px 20px;*/
+    padding: 8px 17px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.panel-other li.list-group-item > span{
+    display:inline-block;
+}
+.panel-other li.list-group-item > .count{
+    background:#a7a7a7;
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+	/*由原来的13px改为10px*/
+    margin-right: 10px;
+}
+.panel-other li.list-group-item > .con{
+    /*width: 70%;
+    overflow: hidden;*//*加上宽度和隐藏new图标不显示*/
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    position: relative;
+    display:inline-block;  
+    vertical-align:middle;
+}
+.panel-other li.list-group-item > .con>strong{
+	color: #576069;
+    font-weight: 700;
+    margin-left:5px;
+}
+.panel-other li.list-group-item > a > span.new{
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    top: -1px;
+    right: -25px;
+}
+.panel-other li.list-group-item a:hover{
+    text-decoration: none;
+}
+.panel-other li.list-group-item > .time{
+    color:#929ba7;
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
+.panel-other li.list-group-item > .time>strong{
+	color: #576069;
+    font-weight: 700;
+    margin-right:22px;
+}
+.panel-other li.list-group-item > .mark{
+    background:none;
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+    text-align: center;
+    color: #c8c9c7;
+    margin-right: 5px;
+}
+/*左侧树折叠按钮*/
+.btn_control {
+    position: absolute;
+    /*9.9top由原来的14px改为8px*/
+    /*20170307top由原来的8px改为4px，left由原来的10px改为7px*/
+    top: 4px;
+    left: 11px;
+    cursor:pointer;
+    z-index: 2;
+}
+.btn_control > img{
+	top:-2px;
+	width:22px;
+	height:22px;
+}
+.todo_tabs{
+    position: absolute;
+    top: 7px;
+    left: 130px;
+}
+.small_tabs {
+    border-bottom:0px solid transparent;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #cbd1d2;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover ,.small_tabs>li>a:hover{
+    background-color: #fff;
+    border:0px solid transparent;
+}
+.small_tabs >li > a {
+    color: #576069;
+    margin-right: 2px;
+    line-height: 1;
+    border: 0px solid transparent;
+    display: inline-block;
+    border-radius: 0;
+    padding: 8px 3px;
+    padding-bottom:11px;
+    padding-bottom:10px\9;
+    background-color:#fff;
+}
+/*表格样式*/
+.table_td > tbody > tr > td{
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    padding:9px;
+    border-color:#ddd;
+    vertical-align:middle;
+}
+.table_td > tbody > tr:first-child > td{
+	border-top:none;
+}
+
+.table_td{
+	/*border-bottom:1px solid #ddd;*/
+	margin-bottom:0;
+}
+.table_td td{
+	color:#576069;
+}
+.table_td td.time{
+	overflow:visible;
+}
+.table span.count{
+	display:inline-block;
+    background:#a7a7a7;
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left:8px;
+}
+.table span.new{
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    margin-left:5px;
+}
+.panel > :last-child.list-group :last-child.list-group-item{
+	border-bottom:0;
+	height:46px;
+	line-height:34px;
+}
+
+.float-content{
+	width: 395px;
+	height: 400px;
+	padding:10px 18px 10px 18px;
+	z-index: 9999;
+	display: none;
+	border-top: 1px solid #d33336;
+	border-right: 1px solid #d33336;
+	border-bottom: 1px solid #d33336;
+	background-color: white;
+}
+.menu-item2{
+	float: left;
+	display: block;
+	margin-bottom:20px;
+	width: 360px;
+}
+.menu-item3{
+	float: left;
+	display: block;
+	width: 85px;
+	height: 60px;
+	margin-top:10px;
+	margin-left: 3px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+}
+.menu-item3 i{
+	font-size: 40px;
+	color: #555555;
+	font-family: "微软雅黑";
+}
+.menu-item3-color{
+	color: #d33238;
+}
+
+
+.panel-other li.list-group-item > .sender{
+    color:#929ba7;
+    position: absolute;
+    right: 100px;
+    top:10px;
+}
+.panel-other li.list-group-item > .sender>strong{
+	color: #576069;
+    font-weight: 700;
+    margin-right:22px;
+}

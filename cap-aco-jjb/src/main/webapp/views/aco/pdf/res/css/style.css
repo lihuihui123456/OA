@@ -1,0 +1,17 @@
+﻿*, body, html { list-style: none; outline: none; color: #000; font-family: 'Microsoft YaHei'; font-size: 13px; margin: 0; padding: 0; }
+body { background: #ddd; }
+.main { box-shadow: 1px 1px 5px #8d8e8e; border-radius: 3px; height: 584px; width: 1055px; background: #eee; border: 1px solid #8d8e8e; margin: 5px auto 0 auto; }
+#CaptureOcx { width: 755px; float: left; height: 582px; background: #e1e1e1; }
+input[type=button] { overflow: visible; width: 135px; padding: 5px 8px; border-radius: 3px; border: 1px solid #808080; }
+    input[type=button]:hover { background: #999; color: #FFF; }
+    input[type=button]:active { background: #6c7070; }
+    select{width: 135px; padding: 5px 8px; border-radius: 3px; border: 1px solid #808080;}
+table { float: right; width: 290px; }
+    table tr td { padding: 3px 3px; text-align: center; }
+    table label { display: inline-block; width: 80px; padding: 5px 0; }
+.savetype label { width: 60px; }
+.qua { text-align: left; }
+fieldset { border-radius: 3px; }
+.exp input[type=button], .qua input[type=button] { width: 30px; vertical-align: middle; height: 25px; margin: 0 5px; }
+.exp input[type=text], .qua input[type=text] { padding: 3px 5px; border: 1px solid #8d8e8e; background: #e1e1e1; border-radius: 3px; vertical-align: middle; width: 30px; margin: 0 5px; }
+#log { padding: 3px 5px; resize: none; border: 1px solid #8d8e8e; border-radius: 3px; width: 95%; height: 85px; }

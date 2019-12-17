@@ -1,0 +1,65 @@
+@charset "utf-8";
+.panel-other > .panel-heading{
+    border-color:transparent;
+    border-bottom: 1px solid #fc5656;
+}
+.panel .panel-heading > h2 > i {
+	 color:#fe7676;
+}
+.panel-other > .panel-heading > .more a{
+    color:#fe7676;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-heading .refresh > a{
+	color:#fc5656;
+}
+.panel-other li.list-group-item a {
+   color:#576069;
+}
+.panel-other li.list-group-item a > span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.panel-other > ul > li.active,.panel-other li.list-group-item:hover{
+    background-color:#fcf1f1;
+    border-bottom: 1px solid #ddd;
+}
+/*按钮根据主题风格变化*/
+.shortcut a > i{
+	color:#d33237;
+}
+.carousel-indicators li > i{
+	color:#d33237;
+}
+/*自定义菜单样式*/
+.shortcut-menu a{
+	background-color: #d33237;
+}
+.shortcut-menu .unchecked{
+	background: url(../images/unchecked.png) no-repeat;
+}
+.shortcut-menu .checked{
+	background: url(../images/checked.png) no-repeat;
+}
+/*移动端-底部菜单导航栏*/
+.stack ul li a > i{
+	color:#d33237;
+}
+
+.stack .openStack li a:hover span{
+	background-color:#d33237;
+}
+
+.carousel-indicators li.active > span{
+    background-color:#d33237;
+}
+
+.shortcut a.add-btn > i{
+	color:#d33237;
+}
+
+.loading{
+    border-bottom:2px solid #d33237;
+}

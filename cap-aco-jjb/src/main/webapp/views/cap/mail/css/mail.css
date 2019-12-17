@@ -1,0 +1,259 @@
+body{
+    background-color: #f2f4f8;
+    font-family: 'Microsoft yahei';
+    font-size: 14px;
+}
+body,html,div,p,ul,li,dl,dd,dt{
+    margin:0;
+    padding:0;
+}
+a{ 
+    cursor: pointer;
+}
+.functionBar{
+    position:fixed;
+    left: 0;
+    top:10px;
+    border:1px solid #ddd;
+    background-color:#fff;
+    width: 240px;
+    height:100%;
+}
+.functionBar > .title{
+    height: 42px;
+    line-height:42px;
+    background-color:#f5f5f5;
+    font-size: 16px;
+}
+.functionBar > .title > a{
+    display:inline-block;
+    width: 49%;
+    text-align:center;
+    border-right:1px solid #fff;
+    color:#d33237;
+    text-decoration: none;
+    float:left;
+}
+.functionBar > .title > a > i{
+    margin-right: 10px;
+}
+.mail_menu{
+    padding: 10px 0;
+}
+.mail_menu > li{
+
+}
+.unRead_bold{
+	font-weight: bold;
+}
+.mail_menu > li > a,
+.my_menu > li > a{
+    display:block;
+    padding:5px 10px;
+    padding-left: 30px;
+    color:#576069;
+    text-decoration: none;
+}
+.my_menu > li > a{
+    padding-left: 45px;
+}
+
+.mail_menu > li > a:hover,
+.my_menu > li > a:hover{
+    background-color: #fcf1f1;
+}
+.mail_menu > li.active > a,
+.my_menu > li.active > a{
+    background-color: #fcf1f1;
+    font-weight: 600;
+}
+
+.mail_menu > li > a > i.icon{
+    margin-left:-20px;
+    margin-right:10px;
+    width:10px;
+}
+.mail_menu > li > a > i.add,
+.my_menu > li > a > i{
+    float:right;
+    padding-top:5px;
+    display:none;
+}
+.my_menu > li > a > i{
+    margin-left: 10px;
+}
+.mail_menu > li > a > i:hover,
+.my_menu > li > a > i:hover{
+    color:#d33237;
+}
+.mail_main{
+    padding:10px 10px 10px 240px;
+}
+.details{
+    background-color:#fff;
+    border:1px solid #ddd;
+    border-radius:4px;
+    margin:10px 0;
+    color:#3f454c;
+    min-height:300px;
+}
+.details > .title{
+    background-color:#fcf1f1;
+    padding:10px 20px;
+    border-bottom:1px solid #fc5656;
+}
+.details > .title > h2{
+    font-size:18px;
+    font-weight:bold;
+}
+.details  a{
+    color:#3f454c;
+    text-decoration: none;
+}
+.details > .title > p,.details > .title span{
+    color:#888;
+    line-height:1.5;
+}
+.details > .title > p > span > b{
+    color:#d33237;
+}
+.details a.clip , .details a.show-more{
+    color:#036dd0;
+}
+.details a.clip{
+    margin-left:2px;
+    font-size: 14px;
+}
+.details > .title i.scale-change {
+    float:right;
+    font-size: 14px;
+    margin-top:-20px;
+    cursor:pointer;
+}
+.details span.mail_black{
+    color:#292b2d;
+}
+.details span.mail_clip{
+    color:#d33237;
+    background:url(img/word_s.png) no-repeat 3px 2px;
+    padding-left:20px;
+}
+.show-more{
+    float:right;
+}
+.mail_con{
+    padding:20px 15px;
+}
+.mail_con .name{
+    padding-bottom:10px;
+}
+.mail_con p{
+    text-indent:2em;
+    line-height:1.5;
+    padding-bottom:10px;
+}
+.mail-title{
+	font-weight:bold; 
+}
+.mail-updown{
+    cursor:pointer;
+	font-size: 14px;
+	color: blue;
+}
+.mail-footer{
+    padding:10px 0px;
+}
+.sender{
+    float:right;
+}
+.sender > span,.sender > a{
+    color:#888;
+}
+.mail-form .control-label{
+	 white-space:nowrap;
+}
+.mail-form  .btn-add{
+	margin-top:-10px;	
+}
+.btn-add,.btn-add:visited,.btn-add:focus{
+	color:#fc5656;
+	text-decoration : none;
+}
+.btn-add:hover{
+	color:#d33237;
+	text-decoration : none;
+}
+.btn-add > span{
+	color:#888;
+}
+.btn-add > span > b{
+	color:#292b2d;
+}
+.add-attachment-con{
+	padding:0;
+	margin-top:-10px;
+}
+.original{
+    margin:10px;
+    color:#3f454c;
+}
+.original > .title{
+    background-color:#ececec;
+    padding:10px;
+    border-radius:4px;
+}
+.original > .title > p{
+    line-height:1.5;
+}
+.original > .title > p >span{
+    color:#888;
+}
+.original > .title > p > b{
+    font-weight: bold;
+}
+.attachment{
+    margin-bottom:10px;
+    border:1px solid #fc5656;
+    border-radius:4px;
+}
+.attachment > .title{
+    background:#fcf1f1;
+    border-bottom: 1px solid #fc5656;
+    padding:8px 10px;
+}
+.attach_con{
+    padding:15px 20px;
+    background:#fff;
+}
+.attach_con > img{
+    float: left;
+    width: 32px;
+    height:32px;
+}
+.attach_con > .attach_sim{
+    margin-left:40px;
+}
+.attach_con > .attach_sim > span{
+    color:#888;
+}
+.attach_con > .attach_sim > a{
+    display:inline-block;
+    margin-right:10px;
+    padding:0;
+}
+.attach_list{
+    border:1px solid #fc5656;
+    background-color:#fcf1f1;
+    padding:5px 10px;
+    border-radius:4px;
+    margin-top:8px;
+    float:left;
+}
+.attach_list > a{
+    display:inline-block;
+    margin-right:10px;
+    padding:0;
+}
+.attach_list > span{
+    color:#888;
+}

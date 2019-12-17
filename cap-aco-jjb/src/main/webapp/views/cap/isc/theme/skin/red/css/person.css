@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*--来自  skin-red.css --start----*/
+.my_tabs>li>a:hover{
+    color: #d33237;
+}
+.my_tabs>li.active>a, .my_tabs>li.active>a:focus, .my_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 2px solid #d33237;
+}
+.my_tabs >li > a.close{
+    color: #576069;
+    opacity: 1;
+}
+.my_tabs >li > a:hover.close{
+    color: #d33237;
+    opacity: 1;
+    border-bottom: 2px solid transparent;
+}
+.panel-other > .panel-heading{
+    border-color:transparent;
+    border-bottom: 1px solid #fc5656;
+}
+.panel .panel-heading > h2 > i {
+	 color:#fe7676;
+}
+.panel-other > .panel-heading > .more a{
+    color:#fe7676;
+}
+.panel-heading .refresh > a{
+	color:#fc5656;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-other li.list-group-item > .red{
+    background:#fc5656;
+}
+.panel-other li.list-group-item > .green{
+    background:#71ad23;
+}
+.panel-other li.list-group-item > .blue{
+    background:#4ac5eb;
+}
+.panel-other li.list-group-item a {
+   color:#576069;
+}
+.panel-other li.list-group-item a > span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.panel-other > ul > li.active,.panel-other li.list-group-item:hover{
+    background-color:#fcf1f1;
+    border-bottom: 1px solid #ddd;
+}
+.small_tabs > li.active{
+    background-color:transparent;
+}
+.small_tabs>li>a:hover{
+    color: #d33237;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 0px solid #fc5656;
+    background:url(../images/triangle_up.png) no-repeat center bottom;
+}
+.table span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.loading{
+    border-bottom:2px solid #d33237;
+}
+/*--来自  skin-red.css --end----*/
+
+
+.navbar-inverse {
+  background-color: #d33237;
+  border-color: #d33237;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #d33237;
+}
+.layout-btn .btn-default{
+	border:1px solid #fff;
+	background:#d33237;
+	color:#fff;
+}
+.layout-btn .btn-default:active,.layout-btn .btn-default.active,.layout-btn .btn-default:hover{
+	border:1px solid #fff;
+	background:#fff;
+	color:#d33237;
+}
+.label-danger {
+  /* background-color: #d33237; */
+}
+.label-danger[href]:hover, .label-danger[href]:focus {
+  background-color: #d33237;
+}
+
+
+/*领导桌面换肤*/
+#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
+	background:url(../images/icons.png) no-repeat;
+}
+#fb7 .fb7-menu li {		
+    background-position: -39px 0px ;
+}
+#fb7 .fb7-tooltip{
+	background: -webkit-linear-gradient(#fc5656,#d33237)repeat scroll 0 0 rgba(0, 0, 0, 0);		 
+ 	background: -o-linear-gradient(#fc5656,#fc5656) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: -moz-linear-gradient(#fc5656,#d33237) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: linear-gradient(#fc5656,#d33237) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #fc5656;
+}
+
+.roll-nav{
+    color:#d33237;
+}

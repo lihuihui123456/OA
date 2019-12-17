@@ -1,0 +1,165 @@
+.circle-image {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	bottom: 0;
+	*bottom: 0;
+	left: 0;
+	background: #FFF
+}
+
+.circle-container {
+	position: absolute;
+	padding: 0px;
+	overflow: hidden;
+	border-radius: 3px;
+	background: #ffffff;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.circle-current {
+	background: #ffffff;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6)
+}
+
+.circle-current .circle-bar {
+	background-position: 0 -31px
+}
+
+.circle-bar {
+	background-color: #00000;
+	border: 0px solid #ccc;
+	position: relative;
+	z-index: 10;
+	height: 26px;
+	padding: 0 20px;
+	line-height: 26px;
+	overflow: hidden;
+	color: #d95043;
+	font-weight: bold;
+	vertical-align: middle;
+	border-bottom: 0px solid #CCC;
+	cursor: pointer;
+	border-radius: 3px 3px 0 0;
+	font-size:14px;
+}
+
+.circle-image {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	bottom: 0;
+	*bottom: 0;
+	left: 0;
+	background: #FFF;
+}
+
+
+#foot1 {
+	bottom: 0px;
+	right: 0;
+	left: 0px;
+	height: 80px;
+	text-align: center;
+}
+
+
+#icon_wrap {
+	position: relative;
+	/*width: 1080px;*/
+	width: 100%;
+	margin: 0 auto;
+	height: 80px;
+}
+
+#icon_wrap_ul {
+	margin: auto auto;
+	width: 80%;
+	height: 80px;
+}
+
+.clearfix-foot-ul:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0
+}
+
+.clearfix-foot-ul {
+	zoom: 1;
+	z-index: 999999;
+}
+
+
+#trash {
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	width: 100px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+#trash1 {
+	position: absolute;
+	bottom: 20px;
+	right: 80px;
+	width: 100px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.icon_li {
+	cursor: pointer;
+	list-style: none;
+	display: inline-block ;
+	*display:inline;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0px 10px 0px 10px;
+	padding: 5px 0px 0px 0px;
+	border: 0;
+}
+.icon_li > a{
+	display:block;
+	color:#fff;
+	margin:0;
+    padding:3px 0px 0px 0px;
+	width:60px;
+	height:60px;
+	text-align:center;
+	vertical-align: bottom;
+	border-radius:4px;
+	cursor:pointer;
+	outline:none;
+}
+.icon_li > a{
+	/*background-color:#fc5656;*/
+	background-color:#d33237;
+}
+
+.icon_li > a > i{
+	font-size:25px;
+}
+.icon_li > a > span{
+	display:block;
+	text-align:center;
+	color:#ffffff;
+	font-size:10px;
+	width:55px;
+}
+
+#myTabContent{
+/* 	background-image: url(../images/bg.png);
+	background-repeat:no-repeat;
+	background-position:center; */
+	background-color: #eaf1f8;
+}
+#foot1{
+	background-image: url(../images/bottombg.png);
+	background-repeat:no-repeat;
+	background-position: center bottom;
+  	background-size: contain;
+}

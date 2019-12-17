@@ -1,0 +1,534 @@
+body{
+	overflow:hidden;
+}
+.sidebar{
+	/* position:absolute;
+	z-index:11;
+	top:80px;
+	width:190px; */
+	position:static;
+	background-color: #fff;
+	border:1px solid #ddd;
+	width:17%;
+	float:left;
+	overflow:auto;
+}
+.sidebar .sidebar-menu{
+	/* width:190px; */
+}
+
+.main {
+	padding: 0;
+	width: 83%;
+	float:left;
+	overflow: auto;
+}
+div#rMenu {
+		position:absolute; 
+		top:0;
+		text-align: left;
+		padding: 2px;
+		z-index:222;
+		border:1px solid #ddd;
+		border-radius:4px;
+		background:#fff;
+}
+div#rMenu ul{
+	margin:0;
+	padding:0;
+}
+div#rMenu ul li{
+	margin: 1px 0;
+	padding: 0 5px;
+	cursor: pointer;
+	list-style: none outside none;
+	background-color: #fcf1f1;
+}
+div#rMenu ul li:hover{
+	background:#fcd6d6;
+}
+ul.tab-wid li {
+	width: 95px;
+}
+.right-btn{
+	cursor:pointer;
+}
+.input-group-addon{
+	position:relative;
+    padding: 6px 30px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:0px;
+	color:#101010;
+}
+.form-control{
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;
+}
+.input-group{
+	margin-bottom:5px;
+	position: relative;
+}
+.right-btn{
+	margin:0px;
+	padding:0px;
+	line-height:25px;
+	height:25px;
+}
+ .sel-tree{
+	display: inline;
+    position: absolute;
+    left: 83px;
+    top: 5px;
+    height: 212px;
+    overflow: auto;
+    width: 470px;
+}
+.look-div-table{
+	width: 470px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 212px;
+    position: absolute;
+    left: 85px;
+    top: 8px;
+}
+.sel-tree td {
+	vertical-align:top;
+}
+.sel-btn-div{
+	border-top: 1px solid #ddd;
+	padding:2px 0;
+	text-align: center;
+}
+.sel-btn-div button{
+	font-size:14px;
+	height:28px;
+	line-height: 28px;
+	margin:0;
+	padding:0 5px;
+}
+.sel-btn-div .btn_ok{
+	margin-right:30px;
+}
+.input-group-btn{
+	background-color: #fff;
+	
+	border-left:0;
+	border-top-right-radius:2px;
+	border-bottom-right-radius:2px;
+	box-shadow:inset 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+	cursor:pointer;
+}
+.text-sel{
+	border-right:0;
+	outline-right:0;
+	border-radius:0;
+}
+.input-group-addon, .input-group-btn{
+	width:4%;
+}
+#rMenu{
+	color:black;
+}
+.share-auth-others{
+	text-align: center;
+	display: block;
+}
+
+.auth-icon-down,.auth-icon-up{
+	font-size: 2em;
+}
+.auth-icon-up{
+	display:none;
+	cursor:pointer;
+}
+.cloud-modal-modal{
+	padding:20px;
+	padding-bottom:0;
+}
+.share-label{
+	cursor:pointer;
+	font-weight: 300;
+}
+.modify-btn,.delete-btn,.delete-btn-personal,.modify-btn-personal{
+	float:right;
+	margin-right:5px;
+}
+.modify-save{
+	display:none;
+}
+.ztree li span.button.shareuser_ico_docu{
+	margin-right:2px; 
+	background: url(./image/user.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;	
+}
+.ztree li span.button.user-o_ico_docu,.ztree li span.button.user-o_ico_open,.ztree li span.button.user-o_ico_close{
+	margin-right:2px; 
+	background: url(./image/user-o.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;	
+}
+.ztree li span.button.share_ico_docu,.ztree li span.button.share_ico_open,.ztree li span.button.share_ico_close{
+	margin-right:2px; 
+	background: url(./image/share1.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;
+}
+.ztree li span.button.folder_ico_docu,.ztree li span.button.folder_ico_close{
+	margin-right:2px; 
+	background: url(./image/folder.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;
+}
+.ztree li span.button.folder_ico_open{
+	margin-right:2px; 
+	background: url(./image/openfolder.png) no-repeat scroll 0 0 transparent; 
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;	
+}
+.ztree li span.button.folder-o_ico_docu,.ztree li span.button.folder-o_ico_close{
+	margin-right:2px; 
+	background: url(./image/folder-o.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;
+}
+.ztree li span.button.folder-o_ico_open{
+	margin-right:2px; 
+	background: url(./image/openfolder-o.png) no-repeat scroll 0 0 transparent; 
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;	
+}
+.ztree li span.button.dept_ico_docu,.ztree li span.button.dept_ico_open,.ztree li span.button.dept_ico_close{
+	margin-right:2px; 
+	background: url(./image/dept.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;
+}
+.ztree li span.button.cloud_ico_docu,.ztree li span.button.cloud_ico_open,.ztree li span.button.cloud_ico_close{
+	margin-right:2px; 
+	background: url(./image/cloud.png) no-repeat scroll 0 0 transparent;
+	vertical-align:top; *vertical-align:middle;
+	margin-top:5px;
+}
+.share-user{
+	margin-top:10px;
+	position: relative;
+	height:200px;
+	overflow:auto;
+}
+.share-ztree{
+	position: absolute;
+	left: 71px;
+    top: -7px;
+}
+.share-date{
+	display: inline;
+    width: 200px;
+}
+.share-user-title{
+	margin-right:20px;
+	font-size:14px;
+	font-weight: bold;
+}
+.fa-check-square-o,.fa-square-o{
+	width:15px;
+}
+.div-title{
+    width: 131px;
+    position: absolute;
+    left: 0px;
+    height: 212px;
+    top: 8px;
+    font-weight: bold;
+}
+.div-authority{
+	position: relative;
+	width:558px;
+	height:220px;
+}
+.div-name{
+    margin-right: 20;
+    font-weight: bold;
+}
+#input_look_pub,#input_add_pub{
+	display: inline;
+	width:460px; 
+}
+.operation-icon{
+    display: block;
+    margin-right: 5px;
+    font-size:1.25em;
+}
+.operation-icon:hover{
+	color:black;
+	font-size:1.25em;
+}
+.log-content{
+	width:800px;
+}
+.modal-dialog{
+	/* margin:30px; */
+}
+.cloud-rMenu i{
+	margin-right:5px;
+}
+.search_div{
+	padding-right: 15px;
+}
+/* .ztree li a.curSelectedNode {
+	font-weight: bold;
+} */
+/*ztree样式更改*/
+.ztree li a:hover {
+	font-weight: bold;
+}
+.path{
+	margin-bottom:5px;
+	width:99%;
+	border:1px solid #ccc;
+	height:30px;
+	line-height: 30px;
+	background-color: #fff;
+}
+.path-btn{
+	background-color: #f2f4f8;
+	width:120px;
+	float:left;
+	height: 28px;
+	line-height: 28px;
+	border-right:1px solid #ccc;
+	text-align: center;
+}
+.path-location{
+	float:left;
+	text-indent: 5px;
+}
+.fa-angle-right{
+	margin-right:4px;
+}
+.btn-group .btn+.btn{
+	margin-left:0;
+}
+.upTo,.backTo,.goTo{
+	cursor: pointer;
+	font-size:1.25em;
+	margin:0 3px;
+}
+.upTo:hover,.backTo:hover,.goTo:hover{
+	background-color: #ddd;
+	font-size:1.25em;
+}
+.icon-file{
+	margin-right:3px;
+}
+.ztree li a.curSelectedNode {
+   	background-color: #fff;
+    font-weight: bold;
+}
+.detail-row{
+	padding:10px 0px;
+}
+.detail-title{
+	font-weight: bold;
+	font-size:1.1em;
+	margin-right:10px;
+	width:100px;
+	display:inline-block;
+}
+.auth-share-user{
+	border:1px;
+	
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.cloud-share {
+	border: 1px solid #e5e5e5;
+	background-color: #F0F0F0;
+}
+.cloud-test {
+    height: 200px;
+	width: 100%;
+	overflow: hidden;
+	padding: 3px 3px 3px 8px;
+	box-sizing: border-box;
+}
+.cloud-test .cloud-test-left {
+	width: 70%;
+	height: 100%;
+	float: left;
+	background-color: white;
+}
+.cloud-test .cloud-test-right{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+.cloud-test  .cloud-test-right ul {
+	text-align: center;
+	padding: 0px;
+	font-size: 14px;
+    margin: 10px;
+}
+.cloud-test  .cloud-test-right button{
+	margin: 0px auto 5px;
+	width:80%;
+	text-align: center;
+}
+.cloud-test  .cloud-test-right span{
+	margin-right:5px;
+}
+.cloud-test  .cloud-test-right li.remove {
+}
+.cloud-auth {
+ 	 text-align: left;
+	width: 100%;
+	padding: 3px 3px 3px 8px;
+	box-sizing: border-box;
+}
+.cloud-auth fieldset {
+	border: 2px solid #cb2320;
+	padding-left:12px;
+}
+.cloud-auth fieldset legend {
+	padding: 0px 2px;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: #e5e5e5;
+    border-image: initial;
+    width: inherit;
+    margin: 5px;
+    font-family: "微软雅黑";
+}
+.cloud-auth ul {
+	margin: 0px;
+	font-size: 14px;
+}
+.cloud-auth li {
+	list-style: none;
+	width: 100%;
+	height: 27px;
+}
+.cloud-auth li span {
+	float:left;
+	
+}
+.cloud-auth li span i{
+	margin-right:5px;
+}
+.cloud-auth li label {
+	float: right;
+	margin-right: 35px;
+	cursor: pointer;
+}
+.cloud-user-tree{
+	border:1px solid #e5e5e5;
+	width:250px;
+	height:450px;
+	float:left;
+	overflow: auto;
+}
+#cloud-auth-console{
+	overflow: auto;
+	height:100%;
+}
+#cloud-auth-console>.tree-user{
+	text-align: left;
+	margin-left:20px;
+	cursor: pointer;
+}
+.selectedAuthNodes{
+	background-color: blue;
+	color:white;
+}
+.leaveAuthNodes{
+	background-color: white;
+	color:black;
+}
+.console-icon{
+	margin-left:5px;
+}
+.tree-user-span{
+	display: inline-block;
+	width:100px;
+}
+#modal_upload{
+	display:none;
+	background-color:white;
+	height:45%;
+	width:50%;
+	position: absolute;
+	top:0px;
+	bottom:20%;
+	left:0px;
+	right:0px;
+	margin:auto;	
+	padding:20px;
+	border-radius: 5px;
+	z-index: 10;
+}
+#closeModalUploadBtn{
+	position: absolute;
+	top:0px;
+	right:5px;
+	font-size:27px;
+	outline: none;
+}
+#minusModalUploadBtn{
+	position: absolute;
+	top:-13px;
+	right:25px;
+	font-size:47px;
+	font-weight:normal;
+	outline: none;
+}
+.uploading-console{
+	display: block;
+	height:30px;
+	width:100%;
+	font-size:12px;
+	font-family: "KaiTi";
+}
+#modal_upload_min{
+	position: absolute;
+	bottom:5px;
+	right:25px;
+	width:350px;
+	display:none;
+	background-color: white;
+	border-radius: 5px;
+	padding:5px;
+	font-family: "KaiTi";
+	z-index: 10;
+	cursor: pointer;	
+}
+#modal_upload_min:hover{
+	border:1px solid;
+}
+.uploading-console-filename{
+	white-space:nowrap;
+	width:100%;
+}
+#download-drop{
+	padding: 5px 10px;
+	border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    font-size: 12px;
+}
+#container{
+    bottom: 10px;
+    position: absolute;
+}
+.turnIcon{
+	  position: absolute;
+	  top:50%;
+}
+

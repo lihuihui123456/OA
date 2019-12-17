@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{
+	font-family: "Microsoft yahei";
+	font-size:14px;
+}
+.datagrid-header-inner,.datagrid-body,.datagrid-header{
+	width:100%!important;
+}
+.datagrid-htable,.datagrid-btable,.datagrid-view,.datagrid {
+	width:100%!important;
+}
+.datagrid-view2,.datagrid-wrap{
+	width:100%!important;
+}
+.datagrid-body table{
+	width:100%!important;
+}
+.datagrid-body{
+	overflow:hidden;
+}
+.table-style th{
+	text-align:center;
+}
+.datagrid-toolbar{
+	margin-bottom:10px;
+}
+.table-inner,.table-inner td,.table-inner th{
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}

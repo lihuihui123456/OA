@@ -1,0 +1,354 @@
+@CHARSET "UTF-8";
+body{
+	position:relative;
+}
+.cloudbar-messaging{
+	position:absolute;
+	top:0;
+	left:0;
+	width:240px;
+	height:100%;
+	background-color:#fff;
+	border:1px solid #ddd;
+}
+.cloudbar-tabs{
+	border-bottom: 1px solid #FC5656;
+	padding-bottom:1px;
+}
+.cloudbar-tabs li{
+	width:59px;
+	text-align:center;
+}
+.cloudbar-tabs li a{
+	color:#d4d5d5;
+}
+.cloudbar-tabs li a > i{
+	font-size:20px;
+}
+.cloudbar-messaging .search{
+	position:relative;
+	/* padding:5px; */
+	padding:4px 5px;
+}
+.cloudbar-messaging .search > input{
+	padding-left:30px;
+}
+.cloudbar-messaging .search > i{
+	position: absolute;
+	top: 13px;
+	left: 15px;
+	color: #D4D5D5;
+}
+.grouping{
+	/* padding:0 10px; */
+	padding:0;
+	cursor:pointer;
+}
+.grouping > .title > i,.grouping > .title > span{
+	color:#a4a0b1;
+}
+.grouping > .title > i{
+	margin-right:10px;
+	width:10px;
+}
+.grouping > .title > span{
+	margin-left:10px;
+}
+.linkman{
+	/* margin:15px 0;
+	padding:5px 0; */
+	cursor:pointer;
+	margin:0;
+	padding:15px 5px;
+	border-top:1px solid #ddd;
+}
+.linkman:hover,.linkman.active{
+	background:#6495cd;
+}
+.linkman > img{
+	width:40px;
+	height:40px;
+	border-radius:4px;
+	float:left;
+}
+.linkman > .linkman-info{
+	padding-left:50px;
+	padding-top: 2px;
+	position:relative;
+}
+.linkman > .linkman-info > .time{
+	position:absolute;
+	right:0;
+	top:0;
+}
+.linkman > .linkman-info > .name{
+	width:90%;
+}
+.linkman > .linkman-info > .name,.linkman > .linkman-info > .state{
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.linkman > .linkman-info > .state,.linkman > .linkman-info > .time{
+	font-size:12px;
+	color:#a4a0b1;
+}
+.linkman > .linkman-info > .state > span{
+	margin-right:5px;
+}
+.linkman:hover > .linkman-info > .name,.linkman:hover > .linkman-info > .state,.linkman:hover > .linkman-info > .time,
+.linkman.active > .linkman-info > .name,.linkman.active > .linkman-info > .state,.linkman.active > .linkman-info > .time
+{
+	color:#fff;
+}
+.cloudbar-title{
+	position: absolute;
+    top: 0;
+    left: 240px;
+    width: 100%;
+	height: 40px;
+    line-height: 40px;
+    background: #F2F4F8;
+    border-bottom: 1px solid #DDD;
+}
+.cloudbar-title > .name-groups{
+	font-weight:bold;
+	/* width:60%;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis; */
+	padding-left:15px;
+}
+.cloudbar-title > .name-groups > span{
+	color:#A4A0B1;
+	margin-left:15px;
+	font-weight:400;
+	font-size:12px;
+}
+.cloudbar-title > .user-plus{
+	position:absolute;
+	right:10px;
+}
+.cloudbar-dialog-box{
+	position:relative;
+	top:40px;
+	margin-left:240px;
+	height:100%;
+	margin-right:150px;
+	border:1px solid #ddd;
+	border-left-width:0;
+	border-top-width:0;
+	background-color:#fff;
+}
+.cloudbar-dialog-box > ul{
+	padding-left:10px;
+	padding-right:10px;
+}
+.cloudbar-dialog-box li{
+	width:65px;
+	text-align:center;
+}
+.cloudbar-dialog-box li > a > img{
+	width:50px;
+	height:50px;
+	border-radius:4px;
+}
+.dialog{
+	padding:10px 20px;
+	position:absolute;
+	width:100%;
+	background:#f2f4f8;
+}
+.dialog > p.time{
+	color:#a4a0b1;
+	text-align:center;
+	font-size:12px;
+}
+.dialog > p.people{
+	color:#fff;
+	line-height:20px;
+	text-align:center;
+	font-size:12px;
+}
+.dialog > p.people > span{
+	text-align:left;
+	background:#cfd3d5;
+	padding:5px;
+	display: inline-block;
+    border-radius: 4px;
+}
+.dialog > .user > .user-name{
+	color:#437197;
+	font-size:12px;
+	margin-left: 52px;
+    margin-bottom: 2px;
+    margin-top: -2px;
+}
+.dialog > .user ,.dialog > .mine{
+	padding:10px 0;
+	clear:both;
+	position:relative;
+}
+.dialog > .user > img,.dialog > .mine > img{
+	width:40px;
+	height:40px;
+	border-radius:4px;
+	float:left;
+	margin-top:-2px;
+}
+.dialog > .user > .information,.dialog > .mine > .information {
+	position:relative;
+	width:auto;
+	padding:5px 10px;
+	line-height:25px;
+	background:#fff;
+	border-radius:4px; 
+}
+.dialog > .user > .information > .arrow,.dialog > .mine > .information > .arrow{
+	position:absolute;
+ 	top:10px;
+	width:0;
+ 	height:0;
+ 	font-size:0;
+ 	border:solid 6px;
+}
+.dialog > .user > .information > .arrow > span,.dialog > .mine > .information > .arrow > span{
+	display: block;
+    position: absolute;
+    top: -4px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    border: solid 4px; 
+}
+.dialog > .user > .information > .arrow{
+	left:-12px; 
+	border-color:#f2f4f8;
+ 	border-right-color:#ddd;
+}
+.dialog > .user > .information > .arrow > span{
+	left: -2px;
+	border-color: transparent;
+    border-right-color: #FFF;
+}
+.dialog > .mine > img{
+	float:right;
+}
+.dialog > .user > .information{
+	float:left;
+	margin-left:12px;
+	border:1px solid #ddd;
+}
+.dialog > .mine > .information{
+	background:#bfddff;
+	float:right;
+	margin-right:12px;
+	border:1px solid #abc7e8;
+}
+.dialog > .mine > .information > .arrow{
+	left:auto;
+	right:-12px;
+	border-color:#f2f4f8;
+	border-left-color:#abc7e8;
+}
+.dialog > .mine > .information > .arrow > span{
+	left:auto;
+	right:-2px;
+	border-color:transparent;
+	border-left-color:#bfddff;
+}
+.dialog > .user > .receipt{
+	color:#a4a0b1;
+	font-size: 12px;
+    clear: both;
+    margin-left: 60px;
+}
+.dialog > .mine > .receipt{
+	color:#a4a0b1;
+	font-size: 12px;
+    clear: both;
+    margin-right: 60px;
+    float:right;
+}
+.state > span.read,.state > span.unread{
+	font-size: 12px;
+	position: absolute;
+}
+.dialog > .user > .state > span.read,.dialog > .user > .state > span.unread{
+	margin-left: 10px;
+    bottom: 38px;
+}
+.dialog > .user > .state > span.read{
+	color: #A4A0B1;   
+}
+.dialog > .user > .state > span.unread{
+	color:#357ACF;
+}
+.dialog > .mine > .state > span.read,.dialog > .mine > .state > span.unread{
+	bottom:-17px;
+}
+.dialog > .mine > .state > span.read{
+	color: #A4A0B1;
+}
+.dialog > .mine > .state > span.unread{
+	color:#357ACF;
+}
+.dialog-edit{
+	position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #DDD;
+    padding-top: 5px;
+}
+.dialog-edit > .setting{
+	padding:0 5px;
+}
+.dialog-edit > .setting > a > img{
+	width:15px;
+	height:15px;
+	margin-right:5px;
+}
+.dialog-edit textarea{
+	width:100%;
+	height:75px;
+	border:none;
+	padding:5px 10px;
+	line-height:20px;
+	border-bottom:1px solid #ddd;
+}
+.dialog-edit textarea:focus{
+	border:none;
+	outline:none;
+	border-bottom:1px solid #ddd;
+}
+.dialog-edit .send-out{
+	position: absolute;
+    bottom: 0;
+    right: 10px;
+    cursor: pointer;
+}
+.cloudbar-tree{
+	position:absolute;
+	top:40px;
+	right:0;
+	width:150px;
+	height:100%;
+	padding-bottom:40px;
+}
+.cloudbar-tree > ul{
+	padding:10px;
+	list-style:none;
+}
+.cloudbar-tree li{
+	padding:5px;
+}
+.cloudbar-tree li > i{
+	margin-right:5px;
+}
+.cloudbar-tree li.male > i{
+	color:#7da4d4;
+}
+.cloudbar-tree li.female > i{
+	color:#f6a75c;
+}

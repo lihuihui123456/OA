@@ -1,0 +1,37 @@
+body{
+	font-family: Microsoft yahei ; 
+	position:relative;
+}
+.about-info{
+	padding-left:15px;
+}
+.about-info > img{
+	height:31px;
+}
+.about-info > p{
+	margin:0;
+	margin-top:25px;
+}
+.rules{
+	border-top:1px solid #ddd;
+	width:100%;
+	margin-top:25px;
+}
+.code{
+	position:absolute;
+	top:40px;
+	right:15px;
+}
+.code > img{
+	width:154px;
+	height:154px;
+}
+.code > p{
+	text-align:center;
+	margin-top:5px;
+}
+.version{
+	position:absolute;
+	top:270px;
+	right:15px;
+}

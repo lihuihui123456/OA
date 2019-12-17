@@ -1,0 +1,43 @@
+@charset "utf-8";
+.icon_li > a{
+	background-color:#62ac5f;
+}
+.circle-bar {
+	color: #62ac5f;
+}
+
+.panel-other > .panel-heading{
+    border-color:transparent;
+    border-bottom: 1px solid #62ac5f;
+}
+.panel .panel-heading > h2 > i {
+	 color:#62ac5f;
+}
+.panel-other > .panel-heading > .more a{
+	padding:2px 12px;
+    color:#62ac5f;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-heading .refresh > a{
+	color:#62ac5f;
+}
+.panel-other li.list-group-item a > span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.panel-other > ul > li.active,.panel-other li.list-group-item:hover{
+    background-color:#E3EAE2;
+}
+.small_tabs > li.active{
+    background-color:transparent;
+}
+.small_tabs>li>a:hover{
+    color: #62ac5f;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #62ac5f;
+    border-bottom: 0px solid #0092dc;
+    background:url(../images/triangle_up.png) no-repeat center bottom;
+}

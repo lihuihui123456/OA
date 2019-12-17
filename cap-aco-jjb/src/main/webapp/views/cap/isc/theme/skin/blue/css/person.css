@@ -1,0 +1,101 @@
+@charset "utf-8";
+/*--来自  skin-red.css --start----*/
+.my_tabs>li>a:hover{
+    color: #0092dc;
+}
+.my_tabs>li.active>a, .my_tabs>li.active>a:focus, .my_tabs>li.active>a:hover {
+    color: #0092dc;
+    border-bottom: 2px solid #0092dc;
+}
+.my_tabs >li > a:hover.close{
+    color: #0092dc;
+    opacity: 1;
+    border-bottom: 2px solid transparent;
+}
+.panel-other > .panel-heading{
+    border-color:transparent;
+    border-bottom: 1px solid #0092dc;
+}
+.panel .panel-heading > h2 > i {
+	 color:#0092dc;
+}
+.panel-other > .panel-heading > .more a{
+	padding:2px 12px;
+    color:#0092dc;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-heading .refresh > a{
+	color:#0092dc;
+}
+.panel-other li.list-group-item a > span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.panel-other > ul > li.active,.panel-other li.list-group-item:hover{
+    background-color:#d4dff0;
+}
+.small_tabs > li.active{
+    background-color:transparent;
+}
+.small_tabs>li>a:hover{
+    color: #0092dc;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #0092dc;
+    border-bottom: 0px solid #0092dc;
+    background:url(../images/triangle_up.png) no-repeat center bottom;
+}
+.table span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.loading{
+    border-bottom:2px solid #0092dc;
+}
+/*--来自  skin-red.css --end----*/
+
+
+.navbar-inverse {
+  background-color: #0092dc;
+  border-color: #0092dc;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #0092dc;
+}
+.label-danger {
+  /* background-color: #0092dc; */
+}
+.layout-btn .btn-default{
+	border:1px solid #fff;
+	background:#0092dc;
+	color:#fff;
+}
+.layout-btn .btn-default:active,.layout-btn .btn-default.active,.layout-btn .btn-default:hover{
+	border:1px solid #fff;
+	background:#fff;
+	color:#0092dc;
+}
+.label-danger[href]:hover, .label-danger[href]:focus {
+  background-color: #0092dc;
+}
+
+
+/*领导桌面换肤*/
+#fb7 .fb7-nav-arrow,#fb7 .fb7-menu li {
+	background:url(../images/icons.png) no-repeat;
+}
+#fb7 .fb7-menu li {		
+    background-position: -39px 0px ;
+}
+#fb7 .fb7-tooltip{
+	background: -webkit-linear-gradient(#5db9e8,#0092dc)repeat scroll 0 0 rgba(0, 0, 0, 0);		 
+ 	background: -o-linear-gradient(#5db9e8,#0092dc) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: -moz-linear-gradient(#5db9e8,#0092dc) repeat scroll 0 0 rgba(0, 0, 0, 0);
+ 	background: linear-gradient(#5db9e8,#0092dc) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #5db9e8;
+}
+
+.roll-nav{
+    color:#0092dc;
+}
