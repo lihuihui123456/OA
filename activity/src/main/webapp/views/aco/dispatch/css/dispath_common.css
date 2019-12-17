@@ -1,0 +1,75 @@
+.btn-default {
+	color: #333;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.btn-default.focus,.btn-default:focus {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #fff
+}
+
+.btn-default:hover {
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #fff
+}
+
+.btn-default.active,.btn-default:active,.open>.dropdown-toggle.btn-default
+	{
+	color: #333;
+	background-color: #e6e6e6;
+	border-color: #fff
+}
+
+.btn-default.active.focus,.btn-default.active:focus,.btn-default.active:hover,.btn-default:active.focus,.btn-default:active:focus,.btn-default:active:hover,.open>.dropdown-toggle.btn-default.focus,.open>.dropdown-toggle.btn-default:focus,.open>.dropdown-toggle.btn-default:hover
+	{
+	color: #333;
+	background-color: #d4d4d4;
+	border-color: #fff
+}
+.tablesmall td,.tablesmall th{
+	border:1px solid transparent;
+	background:#fff;
+	vertical-align:middle;
+	text-align:left;
+}
+.form-control {
+	border: 1px #fff solid;
+	display:inline;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    word-break:break-all;
+}
+.form-group{
+	margin-bottom:0;
+	word-break:break-all;
+}
+.treeDiv {
+	height: 152px;
+	overflow-x: hidden;
+	overflow: auto;
+	text-align: center;
+	margin-top: 20px;
+	display: none;
+	position: absolute;
+	margin-top: -160px;
+	background-image: url('../img/treeImg.png');
+	background-color: black;
+}
+.paper-outer{
+	background-color: #bebebe; 
+	padding:15px 5% 3% 5%;
+}
+.paper-inner{
+	background-color: white;
+	padding:10px 5% 3% 5%;
+}
+.tablestyle th{
+	text-align:center;
+	vertical-align:middle;
+}
+.inputstyle{
+	width:30px;
+}

@@ -1,0 +1,197 @@
+
+.week {
+	text-align: center;
+	background-color: #F8F8F8;
+	font-weight: bold;
+	font-size: 15px;
+	width: 12%;
+}
+
+.noon {
+	text-align: center;
+	width: 6%;
+	background-color: #F8F8F8;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.room {
+	text-align: center;
+	background-color: #F8F8F8;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+* {
+	padding:0;
+	margin:0;
+}
+
+body {
+	margin: 0 auto;
+	background:#2f4f8;
+	text-align: center;
+}
+
+td {
+	color: #333333;
+	font-size: 14px;
+}
+
+#table_hy {
+	width: 100%;
+	/*
+	border: solid 1px;
+	background: #ddd;*/
+	border-radius:4px;
+}
+
+#table_hy td {
+	line-height: 250%;
+	text-align: center;
+	border:solid 1px #d0d2d0;
+}
+
+td.td1 {
+	font-size: 14px;
+	color: #3f454c;
+	background: #f6f6f6;
+	text-align: center;
+	font-weight: bold;
+}
+
+td.td2 {
+	color: #3f454c;
+	width: 6%;
+	background: #f6f6f6;
+	text-align: center;
+}
+
+H1 {
+	MARGIN: 14px 0px;
+	FONT-FAMILY: "Trebuchet MS", Helvetica
+}
+
+P {
+	MARGIN: 14px 0px;
+	FONT-FAMILY: "Trebuchet MS", Helvetica
+}
+
+.bubbleInfo {
+	background: #FFFFFF;
+}
+
+.trigger {
+	width: 22x;
+	height: 22px;
+}
+.popup {
+	Z-INDEX: 50;
+	POSITION: absolute;
+	DISPLAY: none;
+	BORDER-COLLAPSE: collapse;
+}
+
+.popup TD.corner {
+	WIDTH: 19px;
+	HEIGHT: 15px
+}
+
+
+
+.popup TD.bottom IMG {
+	MARGIN: 0px auto;
+	DISPLAY: block
+}
+
+
+.popup TABLE.popup-contents {
+	LINE-HEIGHT: 1.2em;
+	BACKGROUND-COLOR: #e2eefa;
+	FONT-FAMILY: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+		sans-serif;
+	COLOR: #666;
+	FONT-SIZE: 12px;
+}
+
+TABLE.popup-contents TH {
+	TEXT-ALIGN: center;
+	TEXT-TRANSFORM: lowercase;
+	padding:5px;
+}
+
+TABLE.popup-contents TD {
+	TEXT-ALIGN: center;
+	background: #FFFFFF;
+}
+
+TR#release-notes TH {
+	TEXT-ALIGN: center;
+	TEXT-INDENT: -9999px; 
+	HEIGHT: 17px
+}
+
+TR#release-notes TD A {
+	COLOR: #333;
+	TEXT-ALIGN: center
+}
+
+.hyskb {
+	border-top: none;
+	WIDTH: 100%;
+	HEIGHT: 80%;
+	margin: -1px 10px 0;
+	POSITION: relative;
+	text-align: center;
+}
+
+.hyskb2 {
+	WIDTH: 100%;
+	OVERFLOW: hidden;
+	margin: 0 10px;
+	height: 32px;
+	text-align: center;
+}
+
+.date_set{
+	float:left;
+	margin-bottom:10px;
+}
+span.zhi{
+	display:block;
+	padding:5px;
+}
+.date_set > button,.date_set > .date-choose,.date_set > span.zhi{
+	float:left;
+}
+.date-choose{
+	width:170px;
+}
+.date-choose > input{
+	border:1px solid #fc5656;
+	padding:5px 10px;
+	color:#fc5656;
+	border-radius:4px;
+}
+.date-choose > span.input-group-addon{
+	background-color:#fff;
+	border:none;
+}
+.date-choose > span.input-group-addon > i{
+	  position: absolute;
+	  right: 14px;
+	  top: 9px;
+	  z-index: 2;
+	  color:#fc5656;
+}
+.input-group-addon {
+  padding: 6px 0px;
+}
+.rom_state{
+	float:right;
+}
+.rom_state > span{
+	display:inline-block;
+	margin-left:20px;
+	padding-top:8px;
+}

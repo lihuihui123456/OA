@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+
+/* 
+.comment{
+	display: none;
+}
+
+.commentEditBtnGroup{
+	width: 100%;
+	display: none;
+}
+
+.wz{
+	width: 100%;
+	display: none;
+}
+
+.sx{
+	width: 100%;
+	display: none;
+}
+
+.commentTable{
+	display: none;
+}
+
+.commentTable .border-none{
+	border-width:0;
+}
+
+.commentTable .border-top{
+	border-width:0;
+	border-top-width:1px;
+}
+
+.commentTable .border-bottom{
+	border-width:0;
+	border-bottom-width:1px;
+} */
+
+.commentDiv{
+	width: 100%;
+	overflow: auto;
+}
+
+.commentEditDiv{
+	width : 100%;
+	height : 200px;
+	display : none;
+	border-bottom:1px solid #ddd;
+}
+
+.commentEditDiv .commentWz{
+	float:left; 
+	width:50%; 
+	height:100%;
+	word-break:break-all; 
+	border-right:1px solid #ddd;
+}
+.commentEditDiv .commentSx{
+	float:left; 
+	width:50%; 
+	height:100%;
+	overflow: hidden;
+	padding-left:5px;
+	padding-top:5px;
+}
+.commentEditDiv textarea{
+	background-color:white; 
+	width: 100%; 
+	height: 100%
+}
+
+.commentShowDiv{
+	width : 100%;
+	word-break:break-all;
+}

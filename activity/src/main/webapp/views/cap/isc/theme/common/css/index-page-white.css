@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*
+** gengjie创建于2017-01-03 
+** index.jsp的页面内样式
+*/
+.treeview12 {
+	/*font-size: 18px;*/
+	overflow-y: auto;
+}
+.treeview12 a {
+	font-size: 16px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+.treeview12 li{
+	border-left:5px solid transparent!important ;
+	/*color:#576069!important;*/
+	color:#798087!important;
+}
+/*
+.treeview12 li:hover {
+	background-color:#c4e4f6!important;
+	border-left:5px solid #0092dc!important ;
+	color:#0092dc!important;
+}
+.node-treeview12:not(.node-disabled):hover{
+	background-color:#c4e4f6!important;
+	border-top:1px solid #c4e4f6!important;
+	border-bottom:1px solid #c4e4f6!important;
+}*/
+.node-treeview12{
+	background-color:#f2f4f8!important;
+	border:1px solid #f2f4f8!important;
+}
+/*.treeview12 li.node-selected{
+	background-color:#c4e4f6!important;
+	border-left:5px solid #0092dc!important ;
+	color:#0092dc!important;
+}*/
+.treeview .list-group-item{
+	padding-left:5px;
+	padding-right:5px;
+}
+.sidebar {
+	background-color: #f2f4f8;
+	padding-bottom:60px;
+	border-right:1px solid #ddd;
+}
+.table {
+	font-size: 14px;
+}
+
+.treeview span.indent{
+	margin-left:10px!important;
+	margin-right:5px!important;
+}
+.treeview span.icon{
+	vertical-align:middle;
+}
+.btn_control  img{
+	position:relative;
+	z-index:20;
+	cursor:pointer;
+}
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px;
+}
+.navbar-right {
+  float: right !important;
+}
+.navbar-nav>li {
+  float: left;
+}
+.list-group {
+  margin-bottom: 100px;
+}
+.dropdown-menu .title{
+    font-size:16px;
+    /*background: url(${ctx}/static/cap/plugins/msgpush/images/bell.png) no-repeat 10px center;*/
+    padding: 10px 10px 10px 48px;
+    height: 45px;
+    line-height: 25px;
+    border-bottom:2px solid #d33237;
+    margin: 0 -15px;
+    position:relative;
+}
+.navbar .navbar-nav li .dropdown-menu .title > i.notice-icon{
+	font-size:24px;
+	position:absolute;
+	top:14px;
+	left:10px;
+}
+.btn-notice{
+	position:absolute;
+	top:7px;
+	right:0;
+}
+.skin span,.list-group-item span.skin{
+	display:inline-block;
+	float:right;
+	margin-top:15px;
+	margin-left:10px;
+}
+.list-group-item span.skin{
+	margin-top:0;
+}
+.skin span.red,.skin span.blue,.skin span.green,.skin span.black,
+.list-group-item span.red,.list-group-item span.blue,.list-group-item span.green{
+	width: 20px;
+	height: 20px;
+    border:1px solid #f2f4f8;  
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.skin span.red,.list-group-item span.red{
+    background-color: #d33237;
+}
+.skin span.blue,.list-group-item span.blue{
+    background-color: #0092dc;
+}
+.skin span.green,.list-group-item span.green{
+    background-color: #62ac5f;
+}
+.skin span.black{
+    background-color: black;
+}
+.skin span.gray,.skin span.white,
+.list-group-item span.gray,.list-group-item span.white{
+	width: 18px;
+	height: 18px;
+    border:1px solid #576069;  
+    border-radius: 4px;
+    cursor:pointer;
+}
+.skin span.gray,.list-group-item span.gray{
+    background-color: #576069;
+}
+.skin span.white,.list-group-item span.white{
+    background-color: #f2f4f8;
+}

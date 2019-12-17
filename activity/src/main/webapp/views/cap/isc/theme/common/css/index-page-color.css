@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+.treeview12 li:hover {
+	background-color:#3F454C!important;
+	color:#C6DEDB!important;
+}
+.node-treeview12:not(.node-disabled):hover{
+	background-color:#3F454C!important;
+	border-top:1px solid #3F454C!important;
+	border-bottom:1px solid #3F454C!important;
+}
+.treeview12 li.node-selected{
+	background-color:#3F454C!important;
+	color:#fff!important;
+}

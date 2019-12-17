@@ -1,0 +1,154 @@
+*{
+   margin:0;
+   padding:0;
+}
+
+body{
+   font-size:14px;
+   font-family:Microsoft YaHei;
+   color:#333;
+}
+img{border:0}
+.chatbox{
+   background:#f7f8fa;
+   border:1px #ddd solid;
+   height:540px;
+   margin:auto;
+}
+.topbox{
+   height:40px;
+   border-bottom:1px #ddd solid;
+   padding:10px;
+}
+.toptitle{
+   font-size:18px;
+   float:left;
+   width:80%;
+}
+.topbtn{
+   float:right;
+   width:20px;
+}
+.yfb{
+   color:#888;
+   font-size:14px;
+}
+.talkbox{
+   height:310px;
+   border-bottom:1px #ddd solid;
+   padding:10px;
+   overflow:auto;
+}
+.time{
+   color:#888;
+   font-size:14px;
+   text-align:center;
+}
+.whrite{
+   height:130px;
+   padding:10px;
+} 
+.lefticon{
+   float:left;
+   width:80%;
+}
+.lefticon img{
+   margin-right:10px;
+}
+.righticon img{
+   margin-left:10px;
+}
+.righticon{
+   float:20%;
+   text-align:right;
+}
+.whritetext{
+   border:1px #f7f8fa solid;
+   background:#f7f8fa;
+   height:120px;
+   width:100%;
+   font-family:Microsoft YaHei;
+   clear:left;
+}
+.chatbtn{
+   float:right;
+   background:#2f95dc;
+   color:#fff;
+   text-align:center;
+   padding:3px 5px;
+   width:50px;
+   height:25px;
+   margin-right:10px;
+   margin-top:5px;
+}
+.chatbtn a:link,.chatbtn a:visited{
+   color:#fff;
+   text-decoration:none
+}
+.chatbtn a:hover{
+   color:#fff;
+   text-decoration:none;
+}
+.dhk{
+   margin:5px;
+   width:100%;
+   min-height:50px;
+}
+.chatuser{
+   width:48px;
+   height:48px;
+   -webkit-border-radius:50px;
+   border-radius:50px;
+   -moz-border-radius :50px;
+   background:url("./img/default_grouper_header.png");
+   float:left;
+}
+.chatj{
+   width:15px;
+   height:15px;
+   background:url(../img/leftj.png) right no-repeat;
+   float:left;
+   margin-left:5px;
+   margin-top:10px;
+}
+.chatuserb{
+   -webkit-border-radius:10px;
+   border-radius:10px;
+   -moz-border-radius :10px;
+   float:left;
+   background:#fff;
+   padding:10px;
+   width:300px;
+   word-wrap:break-word;
+   word-break:break-all;
+}
+.chatuserright{
+   width:48px;
+   height:48px;
+   -webkit-border-radius:50px;
+   border-radius:50px;
+   -moz-border-radius :50px;
+   background:url(../img/user1.png);
+   float:right;
+}
+.chatr{
+   width:15px;
+   height:15px;
+   background:url(../img/rightj.png) left no-repeat;
+   float:right;
+
+   margin-right:5px;
+   margin-top:10px;
+
+}
+.chatuserbr{
+   -webkit-border-radius:10px;
+   border-radius:10px;
+   -moz-border-radius :10px;
+   float:right;
+   background:#b8d0e8;
+   width:300px;
+   padding:10px;
+   word-wrap:break-word;
+   word-break:break-all;
+}

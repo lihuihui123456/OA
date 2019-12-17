@@ -1,0 +1,469 @@
+@charset "utf-8";
+/*
+**系统公共样式--只涉及换肤的部分 gengjie 2017-1-3 edit
+**绿色
+*/
+/*--来自  style.min.css --start----*/
+.navbar{
+	background: #62ac5f; 
+}
+.navbar .navbar-nav li .dropdown-menu li i {
+	color: #62ac5f;
+}
+.sidebar .sidebar-header {
+	background:#62ac5f;
+}
+.sidebar ul.nav.nav-sidebar li.active,
+.sidebar ul.nav.nav-sidebar ul.active a,
+.sidebar ul.nav.nav-sidebar li.active a,
+.sidebar ul.nav.nav-sidebar ul.opened {
+  	background: #62ac5f;
+}
+
+.btn-default {
+  	color: #62ac5f;
+  	background: #fff;
+  	border: 1px solid #62ac5f;
+}
+.btn-default:hover{
+  	color: #fff;
+  	background-color: #62ac5f;
+  	border: 1px solid #62ac5f;
+}
+.btn-default:focus,
+.btn-default:focus{
+  	color: #fff;
+  	background-color: #62ac5f;
+  	border: 1px solid #62ac5f;
+}
+.btn-default.disabled,
+.btn-default[disabled] {
+  	background-color: #d8d8d8;
+  	border-color: #8d8d8d;
+}
+.btn-default:active,
+.btn-default.active {
+  	background-color: #62ac5f;
+  	border-color: #62ac5f;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default{
+	color: #fff;
+	background-color: #62ac5f;
+  	border-color: #62ac5f;
+}
+.btn-primary {
+  	color: white;
+  	background: #62ac5f;
+  	border: 1px solid #62ac5f;
+}
+.btn-primary:hover,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  	background-color: #53a850;
+  	border-color: #53a850;
+}
+.btn-primary:active,
+.btn-primary.active {
+  	background-color: #53a850;
+	border-color: #53a850;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #53a850;
+    border-color: #53a850;
+}
+.btn-contact{
+	background: #62ac5f!important;
+  	border: 1px solid #62ac5f!important;
+}
+.pagination li a,
+.pagination li span {
+  color: #62ac5f;
+}
+.pagination li a:hover,
+.pagination li span:hover,
+.pagination li a:focus,
+.pagination li span:focus {
+  color: #fff;
+  background-color: #62ac5f;
+  border-color: #62ac5f;
+}
+.pagination li.active a,
+.pagination li.active span,
+.pagination li.active a:hover,
+.pagination li.active span:hover,
+.pagination li.active a:focus,
+.pagination li.active span:focus {
+  background-color: #62ac5f;
+  border-color: #62ac5f;
+}
+.footer{
+	background-color:#62ac5f;
+}
+.table-hover > tbody > tr:hover{
+    background-color:#e3eae2;    
+}
+.table-striped > tbody > tr:hover td{
+	background-color:#e3eae2; 
+}
+.table-striped > tbody > tr.selected:nth-of-type(odd) td{
+	background-color:#e3eae2; 
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{
+	background-color:#62ac5f;
+}
+/*--来自  style.min.css --end----*/
+/*--来自  bootstrap-table.css --start----*/
+.fixed-table-container tbody .selected td {
+    background-color: #e3eae2;
+}
+/*--来自  bootstrap-table.css --end----*/
+/*--来自  skin-red.css --start----*/
+.btn_control > i{
+    color: #62ac5f;
+}
+/*--来自  skin-red.css --end----*/
+/*--来自  naval.css --start----*/
+.nav-tabs > li > a:hover {
+  border-color: #fff;
+  color:#62ac5f;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	border-color:#fff;
+	border-bottom-color: #62ac5f;
+	color:#62ac5f;
+}
+/*--来自  naval.css --end----*/
+/*--来自  table.css --start----*/
+/*--类似拟稿页面表格颜色为红色--*/
+.tablestyle{
+   border:1px #62ac5f solid;
+}
+.tablestyle td{
+   /* border:1px #62ac5f solid;
+   color:#4c4f53; */
+   border:1px #ddd solid;
+   color:#666;
+}
+.tablestyle td a{
+   color:#62ac5f;
+}
+.tablestyle th{
+   /* border:1px #62ac5f solid;
+   color:#62ac5f;
+   background:#fafafa; */
+   border:1px #ddd solid;
+   color:#666;
+   background:#fafafa;
+}
+.tablestyle_title{
+   /* color:#62ac5f; */
+   color:#000;
+}
+.btn_operation > i{
+	color:#62ac5f;
+}
+/*--来自  table.css --end----*/
+/*--来自  iweb-revision.css --end----*/
+.LinkButton {
+	color: #62ac5f;
+}
+/*--来自  iweb-revision.css --end----*/
+/*--来自  layer.css --start----*/
+.layui-layer-title {
+    border-bottom: 1px solid #eee;
+    color:#fff;
+    background-color:#62ac5f;
+}
+.layui-layer-btn .layui-layer-btn0 {
+    background-color:#62ac5f;
+    color: #fff;
+}
+.layui-layer-lan .layui-layer-title {
+    background-color: #62ac5f;
+    color: #fff;
+}
+.layui-layer-lan .layui-layer-btn a {
+    background-color: #62ac5f;
+}
+.layui-layer-molv .layui-layer-title {
+    background: #62ac5f;
+    color: #fff;
+}
+.layui-layer-btn a.layui-layer-btn1:hover{
+	color:#62ac5f;
+}
+/*--来自  layer.css --end----*/
+/*--来自 calendar -- style.css --start----*/
+	/*个人桌面和领导桌面的日历部分*/
+.calendar tbody td.current-day:hover,.calendar tbody td.current-day.active{
+	background:url(../images/cur_bg.png) no-repeat center;
+    color: #fff;
+}
+.current-day {
+    background:url(../images/cur_bg.png) no-repeat center;
+    color: #fff;
+}
+.calendar tbody td:hover,.calendar tbody td.active {
+    background:url(../images/active_bg.png) no-repeat center;
+}
+.event:after {
+    background: #62ac5f;
+}
+.unfinished{
+   color:#576069;
+   border-left: 1px solid #62ac5f;
+}
+ .unfinished > .point i { 
+    color:#62ac5f;
+}
+.last_one {
+  border: none;
+}
+/*--来自  calendar -- style.css --end----*/
+/*--来自  Fullcalendar.css --start----*/
+/*只用于日程管理页面*/
+/*每日日程*/
+.fc-event {
+	border: 1px solid #62ac5f; 
+	background-color: #e3eae2; 
+}
+.fc-grid .fc-day-cnTerm{
+	color:#62ac5f; /*日历表中节日节气字体颜色*/
+}
+.fc-grid .fc-sun .fc-day-number, .fc-grid .fc-sun .fc-day-cnDate, 
+.fc-grid .fc-sat .fc-day-number, .fc-grid .fc-sat .fc-day-cnDate{
+	color:#62ac5f;
+}
+.h_calendar_alm {
+	border: 1px solid #62ac5f;
+}
+.alm_list_content{
+	border-top: 3px solid #62ac5f;
+}
+.alm_content {	
+	border-top: 3px solid #62ac5f;
+}
+.today_icon {
+	background: url(../images/today_icon.png) no-repeat;
+}
+.today_date {
+	color:#62ac5f;
+}
+.alm_content p {
+	color:#62ac5f;
+}
+.alm_content .alm_lunar_date {
+	color: #62ac5f; /*右侧节日节气字体颜色*/
+	/*background: url(../images/alm_lunar_date.png) no-repeat;*/
+}
+select.selectable{
+	background: #fff url(../images/select.png) no-repeat !important;
+	background-size: 12px 12px !important;
+    background-position: right center !important;
+    border:1px solid #62ac5f !important;
+    color:#62ac5f !important;  
+}
+/*--来自  Fullcalendar.css --end----*/
+/*--来自  jquery-ui.min.css --start----*/
+/*只用于日程管理页面*/
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+	.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+	border: 1px solid #62ac5f;
+	background:#ffffff;
+	color: #62ac5f;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+	border: 1px solid #62ac5f;
+	background: #62ac5f;
+	color: #fff;
+}
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error{
+	border: 1px solid #62ac5f;
+	background: #62ac5f url(../images/ui-bg_flat_15_cd0a0a_40x100.png) 50%
+		50% repeat-x;
+	color: #fff
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  	border: 1px solid #62ac5f; 
+  	color: #62ac5f;
+}
+.ui-state-hover,.ui-state-active{
+	background-color:#62ac5f;
+	color:#fff;
+}
+.ui-corner-left .ui-icon{
+	background: url(../images/corner-left.png) no-repeat center 2px;
+}
+.ui-corner-right .ui-icon{
+	background: url(../images/corner-right.png) no-repeat center 2px ;
+}
+/*--来自  jquery-ui.min.css --end----*/
+/*--来自  index-page.css --start----*/
+	/*.treeview12 li:hover {
+		border-left:5px solid #62ac5f ;
+	}
+	.treeview12 li.node-selected{
+		border-left:5px solid #62ac5f ;
+	}*/
+
+.treeview12 li:hover {
+	background-color:#d1e5d0!important;
+	border-left:5px solid #62ac5f!important ;
+	color:#62ac5f!important;
+}
+.node-treeview12:not(.node-disabled):hover{
+	background-color:#d1e5d0!important;
+	border-top:1px solid #d1e5d0!important;
+	border-bottom:1px solid #d1e5d0!important;
+}
+.treeview12 li.node-selected{
+	background-color:#d1e5d0!important;
+	border-left:5px solid #62ac5f!important ;
+	color:#62ac5f!important;
+}
+.dropdown-menu .title{
+    /*background: url(../images/bell.png) no-repeat 10px center;*/
+    border-bottom:2px solid #62ac5f;
+}
+.dropdown-menu .title > i.notice-icon{
+	color:#62ac5f;
+}
+/*--来自  index-page.css --end----*/
+/*--来自  searchIndex.css --start----*/
+	/*全文检索*/
+.select_type{
+	border:1px solid #62ac5f;
+	color:#62ac5f;
+}
+.search_input{
+	border:2px solid #62ac5f;
+}
+.page_number a:hover{
+	border: 1px #62ac5f solid; 
+}
+.page_number .selected{
+	border: 1px #62ac5f solid; 
+}
+/*--来自  searchIndex.css --end----*/
+.table {   
+   table-layout: fixed;     
+}   
+  
+.table tr td {   
+    text-overflow: ellipsis; /* for IE */  
+    -moz-text-overflow: ellipsis; /* for Firefox,mozilla */  
+    overflow: hidden;   
+    white-space: nowrap; 
+}
+.table td.time{
+	text-overflow: visible; /* for IE */  
+    -moz-text-overflow: visible; /* for Firefox,mozilla */ 
+	overflow:visible;
+}
+/*物品入库状态*/
+.btn-group .state1{
+	background-color:#62ac5f;
+	color:#fff;
+}
+.btn-group .state2{
+	background-color:#fff;
+	color:#62ac5f;
+}
+/*手写签批*/
+.jSignatureBody{
+	background-color: #fff;
+	color: #62ac5f;
+}
+.signatureCon{
+	border: 1px solid #62ac5f;
+}
+/*会议室预定时间选择*/
+.date-choose > input {
+  border: 1px solid #62ac5f;
+  color: #62ac5f;
+}
+/*通讯录*/
+.word-select ul li{
+ 	color:#62ac5f;
+ }
+/*通讯录星星*/
+ .contacts-star{
+	color:#62ac5f;
+}
+/*ztree样式更改*/
+.ztree li a:hover {color:#62ac5f;}
+
+
+.close-page{
+	color:#666!important;
+}
+.open-page{
+	color:#62ac5f!important;
+}
+/*首页用户中心上面红色线条*/
+.info-bom{
+	border-top: 2px solid #62ac5f; 
+	margin-top: -3px;
+}
+/*日历控件弹层----start--*/
+.laydate_body .laydate_top{
+	border-top:1px solid #62ac5f; 
+	background-color:#62ac5f;
+}
+.laydate_body .laydate_ym {
+  border: 1px solid #62ac5f;
+  background-color: #62ac5f;
+}
+.laydate_body .laydate_ym {
+  border: 1px solid #62ac5f;
+  background-color: #62ac5f;
+}
+.laydate_body .laydate_click {
+  background-color: #41983E!important;
+  color: #FFF!important;
+}
+.laydate_body .laydate_choose:hover, .laydate_body .laydate_y .laydate_yms a:hover {
+   background-color: #62ac5f; 
+}
+.laydate_body .laydate_choose {
+  border-left: 1px solid #62ac5f;
+}
+.laydate_body .laydate_chprev {
+  border-left: none;
+  border-right: 1px solid #62ac5f;
+}
+.laydate_body .laydate_m .laydate_yms span:hover, .laydate_body .laydate_time .laydate_hmsno span:hover, .laydate_body .laydate_y .laydate_yms ul li:hover, .laydate_body .laydate_table td:hover {
+  background-color: #62ac5f;
+  color: #FFF;
+}
+.laydate_body .laydate_time{
+	color:#62ac5f;
+}
+.laydate_body .laydate_ym .laydate_yms{
+	border: 1px solid #62ac5f;
+    background-color: #62ac5f;
+}
+.laydate_body .laydate_y .laydate_yms a{
+	border-bottom: 1px solid #62ac5f;
+}
+.laydate_body .laydate_y .laydate_yms .laydate_chdown {
+  border-top: 1px solid #62ac5f;
+}
+/*日历控件弹层----end--*/
+
+.tablestyle .yinyong{
+	color:#62ac5f;
+}
+.calendar-name{
+	color:#62ac5f;
+}
+
+ul.sys-set > li.info-bom {
+  border-top: 2px solid #62AC5F;
+}
+ul.sys-set > li > a > i{
+	color:#62AC5F;
+}

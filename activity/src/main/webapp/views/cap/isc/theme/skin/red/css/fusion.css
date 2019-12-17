@@ -1,0 +1,54 @@
+@charset "utf-8";
+.icon_li > a{
+	background-color:#d33237;
+}
+.circle-bar {
+	color: #d33237;
+}
+.panel-other > .panel-heading{
+    border-color:transparent;
+    border-bottom: 1px solid #fc5656;
+}
+.panel .panel-heading > h2 > i {
+	 color:#fe7676;
+}
+.panel-other > .panel-heading > .more a{
+    color:#fe7676;
+}
+.panel-heading .refresh > a{
+	color:#fc5656;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-other li.list-group-item > .red{
+    background:#fc5656;
+}
+.panel-other li.list-group-item > .green{
+    background:#71ad23;
+}
+.panel-other li.list-group-item > .blue{
+    background:#4ac5eb;
+}
+.panel-other li.list-group-item a {
+   color:#576069;
+}
+.panel-other li.list-group-item a > span.new{
+    background:url(../images/new.png) no-repeat;
+}
+.panel-other > ul > li.active,.panel-other li.list-group-item:hover{
+    background-color:#fcf1f1;
+    border-bottom: 1px solid #ddd;
+}
+.small_tabs > li.active{
+    background-color:transparent;
+}
+.small_tabs>li>a:hover{
+    color: #d33237;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 0px solid #fc5656;
+    background:url(../images/triangle_up.png) no-repeat center bottom;
+}

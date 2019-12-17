@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* gengjie创建于2016-05-13 */
+.btn_control > i{
+    color: #d33237;
+}
+.my_tabs>li>a:hover{
+    color: #d33237;
+}
+.my_tabs>li.active>a, .my_tabs>li.active>a:focus, .my_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 2px solid #d33237;
+}
+.my_tabs >li > a.close{
+    color: #576069;
+    opacity: 1;
+}
+.my_tabs >li > a:hover.close{
+    color: #d33237;
+    opacity: 1;
+    border-bottom: 2px solid transparent;
+}
+.panel-other > .panel-heading{
+    /*background:url(../images/panel_title_bg.png) no-repeat 20px center;*/
+    border-color:transparent;
+    border-bottom: 1px solid #fc5656;
+}
+.panel .panel-heading > h2 > i {
+	 color:#fe7676;
+}
+.panel-other > .panel-heading > .more a{
+    color:#fe7676;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../../../../static/aco/images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.panel-other li.list-group-item > .red{
+    background:#fc5656;
+}
+.panel-other li.list-group-item > .green{
+    background:#71ad23;
+}
+.panel-other li.list-group-item > .blue{
+    background:#4ac5eb;
+}
+.panel-other li.list-group-item a {
+   color:#576069;
+}
+.panel-other li.list-group-item a > span{
+    background:url(../../../../../../static/aco/images/new.png) no-repeat;
+}
+.panel-other > ul > li.active,.panel-other li.list-group-item:hover{
+    background-color:#fcf1f1;
+    border-bottom: 1px solid #ddd;
+}
+.small_tabs > li.active{
+    background-color:transparent;
+}
+.small_tabs>li>a:hover{
+    color: #d33237;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 0px solid #fc5656;
+    background:url(../../../../static/aco/images/triangle_up.png) no-repeat center bottom;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #fc5656;
+}
+.loading{
+    border-bottom:2px solid #4ac5eb;
+    position:absolute;
+    /*9.9由41px改为35px*/
+    top: 35px;
+    left: 0;
+    z-index:4;
+}
+/*表格样式*/
+.table  span.red{
+    background:#fc5656;
+}
+.table  span.green{
+    background:#71ad23;
+}
+.table  span.blue{
+    background:#4ac5eb;
+}
+.table span.new{
+    background:url(../../../../static/aco/images/new.png) no-repeat;
+}
+.table td.time{
+	color:#929ba7;
+}
+
+.table-hover > tbody > tr:hover{
+    background-color:#fcf1f1;    
+}
+.table-hover > tbody > tr:hover td{
+	color:#576069;
+}
+.table-hover td{
+	color:#576069;
+}
+.todo_views{
+	color:#d33237;
+}

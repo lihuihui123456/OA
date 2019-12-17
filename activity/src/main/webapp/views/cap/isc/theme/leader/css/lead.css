@@ -1,0 +1,389 @@
+@charset "utf-8";
+/* gengjie创建于2016-10-27 */
+html,body,div,p{
+    margin: 0;
+    padding: 0;
+    font-family:'Microsoft yahei';
+    font-size:14px;
+}
+body{
+	 background-color:#adadad;
+}
+img{
+    border:0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.mar_b_10{
+	margin-bottom:10px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+/*左边部分*/
+.left_part{
+	position:absolute;
+	top:70px;
+	left:10px;
+	bottom:10px;
+	width:350px;/*左边部分宽度*/
+	/* background:url(../../../../../../static/aco/images/top_bg.png) repeat-x 10px 10px #fff;	
+	padding:30px 20px 15px 10px; */
+	background:#fff;
+	padding:10px 20px 15px 10px;
+}
+/*轮播图*/
+.carousel{
+	/*width:370px;
+	height:200px;*/
+	background:#fff;
+}
+/*日程管理*/
+.schedule{
+	
+}
+.btn_calendar a{
+	color:#d33237;
+	cursor:pointer;
+}
+/*快捷操作*/
+.shortcut{
+	clear:both;
+	position:absolute;
+	bottom:15px;
+}
+.shortcut > a,.custom-menu > a{
+	display:block;
+	float:left;
+	padding:10px;
+	margin:10px 20px 30px 0px;
+	color:#fff;
+	text-align:center;
+	width:50px;
+	height:50px;
+	border-radius:4px;
+	cursor:pointer;
+	outline:none;
+}
+.shortcut > a.red ,.custom-menu > a.red{
+	background-color:#fc5656;
+}
+.shortcut > a.blue,.custom-menu > a.blue{
+	background-color:#4ac5eb;
+}
+.shortcut > a.green,.custom-menu > a.green{
+	background-color:#71ad23;
+}
+.shortcut > a.orange,.custom-menu > a.orange{
+	background-color:#f6a320;
+}
+.shortcut > a > i,.custom-menu > a > i{
+	font-size:30px;
+}
+.shortcut > a > span,.custom-menu > a > span{
+	display:block;
+	text-align:center;
+	color:#3f454c;
+	margin-top:15px;
+	font-size:12px;
+	/*white-space:nowrap;*/
+	margin-left:-10px;
+	width:50px;
+}
+.shortcut > a.add-btn{
+	font-size:30px;
+	padding:0;
+	background-color:#c7c7c7;
+}
+.custom-menu{
+	float:left;
+	margin-right: 50px;
+	margin-top:20px;
+}
+.custom-menu > h4{
+	font-size:14px;
+	margin-bottom:0;
+	margin-top:0px;
+	font-weight:bold;
+}
+.custom-menu > a{
+	position:relative;
+	margin-right:25px;
+}
+.custom-menu > a > span{
+	margin-top:20px;
+}
+.custom-menu .unchecked,.custom-menu .checked{
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+}
+.custom-menu .unchecked,.custom-one .unchecked{
+	background: url(../images/unchecked.png) no-repeat;
+}
+.custom-menu .checked,.custom-one .checked{
+	background: url(../images/checked.png) no-repeat;
+}
+.custom-one{
+	float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.custom-one > a{
+    position:relative;
+	display:block;
+	width:150px;
+	height:80px;
+	margin:10px 50px 10px 0;
+	color:#d33237;
+	border-radius:4px;
+	cursor:pointer;
+	outline:none;
+	text-align:center;
+	padding-top: 25px;
+	font-size:16px;
+	padding-left: 20px;
+	float:left;
+}
+.custom-one > a > i{
+	position:absolute;
+	font-size:28px;
+	top: 23px;
+    left: 20px;
+}
+.custom-one > a.gray{
+	background-color:#f1f1f1;
+}
+.custom-one .unchecked,.custom-one .checked{
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+}
+/*中间部分*/
+.center_part{
+    margin: 70px 10px 10px 370px;/*右边部分距左边的距离为左侧宽度+ 20*/
+    /*background:url(../../../../../../static/aco/images/top_bg.png) repeat-x 10px 10px #fff;	
+    padding:30px 10px 15px 20px;*/
+    background:#fff;
+    padding:10px 10px 15px 20px;
+    position:relative;
+}
+.center_part .btn_control{
+	position:absolute;
+	top:16px;
+	left:40px;
+}
+.center_part .btn_control > i{
+	cursor:pointer;
+	font-size:22px;
+}
+.contact_bg{
+	position:absolute;
+	left:338px;
+	top:100px;
+	background:url(../../../../../../static/aco/images/contact_bg.png) no-repeat center 0px;
+	width:60px;
+	height:100%;
+}
+.lead_left_min{
+	background:url(../images/bg-left-lead.png) no-repeat center 0px;
+	width:60px;
+	position:absolute;
+	left:0;
+	top:10px;
+}
+.panel-other{
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+.panel-other > .panel-heading{
+    height: 40px;
+    position: relative;
+    border-color:transparent;
+    border-bottom: 1px solid #fc5656;
+}
+.panel-other > .panel-heading > h2{
+	color:#576069;
+	font-size:14px;
+	margin:0;
+	font-weight:200;
+}
+.panel-other > .panel-heading img{
+	margin-right:10px;
+	width:25px;
+	height:25px;	
+}
+.panel-other > .panel-heading >.more{
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+.panel-other > .panel-heading > .more a{
+	padding:2px 12px;
+    color:#fe7676;
+}
+.panel-other > .panel-heading > .more a:hover{
+    background:url(../../../../../../static/aco/images/more_bg.png) no-repeat center;
+    color:#fff;
+}
+.opinion_sent{
+	position:absolute;
+	top:5px;
+	right:100px;
+	width:300px;
+}
+.opinion_sent > .select_sent{
+	width:250px;
+	float:left;
+}
+.opinion_sent > .btn{
+	float:right;
+}
+.todo_tabs{
+    position: absolute;
+    top: 7px;
+    left: 50px;
+}
+.small_tabs {
+    border-bottom:0px solid transparent;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #cbd1d2;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover ,.small_tabs>li>a:hover{
+    background-color: #fff;
+    border:0px solid transparent;
+}
+.small_tabs >li > a {
+    color: #576069;
+    margin-right: 2px;
+    line-height: 1;
+    border: 0px solid transparent;
+    display: inline-block;
+    border-radius: 0;
+    padding: 8px;
+    padding-bottom:11px;
+    background-color:#fff;
+}
+
+.small_tabs > li.active{
+    background-color:transparent;
+}
+.small_tabs>li>a:hover{
+    color: #d33237;
+}
+.small_tabs>li.active>a, .small_tabs>li.active>a:focus, .small_tabs>li.active>a:hover {
+    color: #d33237;
+    border-bottom: 0px solid #fc5656;
+    background:url(../../../../../../static/aco/images/triangle_up.png) no-repeat center bottom;
+}
+
+/*表格样式*/
+.table_td > tbody > tr > td{
+	display:inline-block;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    padding:9px 15px;
+    border-color:#ddd;
+    color:#3f454c;
+}
+.table_td > tbody > tr:first-child > td{
+	border-top:none;
+}
+.table_td{
+	margin-bottom:0;
+}
+.table_td td{
+	color:#576069;
+}
+.table span.count{
+	display:inline-block;
+    background:#a7a7a7;
+    height: 23px;
+    line-height: 23px;
+    width: 23px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left:10px;
+}
+.table span.mark{
+	padding:9px 1px;
+    color: #c8c9c7;
+    margin-right: 9px;
+}
+.table span.red{
+    background:#fc5656;
+}
+.table span.green{
+    background:#71ad23;
+}
+.table span.blue{
+    background:#4ac5eb;
+}
+.table span.new{
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    margin-left:5px;
+    background:url(../../../../../../static/aco/images/new.png) no-repeat;
+}
+.table td.time{
+	color:#929ba7;
+	text-align:right;
+	/*overflow:visible;*/
+}
+
+.table-hover > tbody > tr:hover{
+    background-color:#fcf1f1;    
+}
+.table-hover > tbody > tr:hover td{
+	color:#576069;
+}
+.table-hover td{
+	color:#576069;
+}
+.lead_tabs{
+	margin:0 5px 10px 5px;
+	padding-left:50px;
+}
+/*重写tabs标签样式*/
+.lead_tabs li>a{
+	background:#fff;
+	color:#576069;
+	border-color: #D9D9D9;
+	outline:none;
+}
+.lead_tabs li > a:hover {
+  border-color: #D9D9D9;
+  border-bottom-color:transparent;
+  color:#d33237;  
+}
+.lead_tabs li.active > a, .lead_tabs li.active > a:hover, .lead_tabs li.active > a:focus {
+   border-color: #D9D9D9;
+   border-bottom-color:transparent;
+   color: #d33237; 
+}
+.lead_tabs li#home > a{
+	height:36px; 
+}
+.btn-primary{
+	background-color: #d33237;
+    border-color: #d33237;
+}
+#changeModal{
+	margin-top:50px;	
+}

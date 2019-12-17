@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<description>Shiro安全配置</description>
+	
+	<!-- 自定义会话管理器 -->
+	<bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">    
+        <property name="globalSessionTimeout" value="1800000"/>    
+        <property name="deleteInvalidSessions" value="true"/>    
+        <property name="sessionDAO" ref="sessionDAO"/> 
+        <property name="sessionListeners">
+        	<list>
+        		<ref bean="shiroSessionListener"/>
+        	</list>
+        </property>   
+        <property name="sessionIdCookieEnabled" value="true"/>    
+        <property name="sessionIdCookie" ref="sessionIdCookie"/>    
+        <property name="sessionValidationSchedulerEnabled" value="true"/>  
+        <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/>  
+        <property name="cacheManager" ref="shiroEhcacheManager"/>  
+	</bean>
+	
+	<!-- session监听 -->
+	<bean id="shiroSessionListener" class="com.yonyou.cap.isc.shiro.listener.ShiroSessionListener"></bean>
+	
+	<!-- 会话DAO，sessionManager里面的session需要保存在会话Dao里，没有会话Dao，session是瞬时的，没法从sessionManager里面拿到session -->
+	 <bean id="sessionDAO" class="org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO">    
+        <property name="sessionIdGenerator" ref="sessionIdGenerator"/>    
+        <property name="activeSessionsCacheName" value="shiro-activeSessionCache"/>  
+    </bean>
+    
+    <bean id="sessionIdCookie" class="org.apache.shiro.web.servlet.SimpleCookie">    
+        <constructor-arg value="sid"/>  
+        <property name="httpOnly" value="true"/>  
+        <property name="maxAge" value="-1"/>   
+	</bean>
+	
+	<!-- 会话ID生成器 -->  
+	<bean id="sessionIdGenerator" class="org.apache.shiro.session.mgt.eis.JavaUuidSessionIdGenerator"></bean> 
+	
+	<!-- 自定义表单认证过滤器 -->
+	<bean id="formAuthFilter" class="com.yonyou.cap.isc.shiro.filter.FormAuthFilter"></bean>
+	
+	<!-- 控制同一账号不能再多个地方登录，通过修改maxSession参数控制在线人数 --> 
+	<!-- <bean id="kickoutSessionControlFilter"  class="com.yonyou.cap.common.shiro.filter.KickoutSessionControlFilter">    
+	    <property name="sessionManager" ref="sessionManager"/>    
+	    <property name="cacheManager" ref="shiroEhcacheManager"/>  
+	    <property name="kickoutAfter" value="false"/>    
+	    <property name="maxSession" value="1"/>    
+	    <property name="kickoutUrl" value="/login?kickout=1"/>    
+	</bean> -->
+	
+	<!-- 注销过滤器 -->
+	<bean id="systemLogoutFilter" class="com.yonyou.cap.isc.shiro.filter.SystemLogoutFilter"></bean> 
+	
+	<!-- 会话验证调度器 -->  
+    <bean id="sessionValidationScheduler" class="org.apache.shiro.session.mgt.ExecutorServiceSessionValidationScheduler">  
+        <property name="interval" value="1800000"/>  
+        <property name="sessionManager" ref="sessionManager"/>  
+    </bean>
+
+	<!-- Shiro's main business-tier object for web-enabled applications -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="shiroDbRealm" />
+		<property name="sessionManager" ref="sessionManager"/>
+		<property name="cacheManager" ref="shiroEhcacheManager" />
+	</bean>
+
+	<!-- 項目自定义的Realm, 所有accountService依赖的dao都需要用depends-on声明 -->
+	<bean id="shiroDbRealm" class="com.yonyou.cap.isc.shiro.ShiroDbRealm">
+		<property name="accountService" ref="accountService" />
+	</bean>
+
+	<!-- Shiro Filter -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/login" />
+		<property name="successUrl" value="/indexController" />
+		<property name="filters">    
+	         <map>    
+	             <!-- <entry key="kickout" value-ref="kickoutSessionControlFilter"/> -->    
+	             <entry key="logout" value-ref="systemLogoutFilter"/>    
+	             <entry key="authc" value-ref="formAuthFilter"/>        
+	         </map>    
+     	</property> 
+		<property name="filterChainDefinitions">
+			<value>
+				/login = authc
+				/logout = logout
+				/static/** = anon
+				<!-- /api/** = anon
+				/register/** = anon -->
+				/admin/** = roles[admin]
+				/pwdGetBackController/** = anon
+				/userController/** = anon
+				<!-- 软件简史 -->
+				/historyController/showSysSoftHist == anon
+				<!-- 移动端访问controller不需要验证用户 -->
+				/mobileBpmController/** = anon
+				/mobileContactsController/** = anon
+				/mobileRetrievalControlle/** =anon
+				/mobileCalendarController/** =anon
+				/media/** =anon
+				/iweboffice/** =anon
+				/**Controller/** = user
+			</value>
+		</property>
+	</bean>
+
+	<!-- 用户授权信息Cache, 采用EhCache -->
+	<bean id="shiroEhcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<property name="cacheManagerConfigFile" value="classpath:config/ehcache/ehcache-shiro.xml" />
+	</bean>
+
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+</beans>

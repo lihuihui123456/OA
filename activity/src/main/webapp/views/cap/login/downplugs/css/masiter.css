@@ -1,0 +1,108 @@
+/*鍒濆鍖�/
+body {  font-size:12px; }
+html>body { font-size:10px;  }
+/*瀛椾綋杈规绛夊垵濮嬪寲*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,
+textarea,p,blockquote,th,td
+{  padding: 0;  margin: 0;  }
+table {   border-collapse: collapse;  border-spacing: 0;  }
+fieldset,img {  border: 0;  }  img {   display:block;  }
+address,caption,cite,code,dfn,th,var {  font-weight: normal;  font-style: normal;  }
+ol,ul {   list-style: none;  }
+caption,th {  text-align: left;  }
+h1,h2,h3,h4,h5,h6 {  font-weight: normal;  font-size: 100%;  }
+/*鏍峰紡寮�*/
+body{
+    width:70%;
+    margin:0 auto;
+    font-family: 'Microsoft yahei';
+    overflow-x:hidden;
+}
+h3{
+    height:36px;
+    line-height:36px;
+    margin-top:5px;
+    font-size:20px;
+    font-weight:600;
+    color:#4b4b4b;
+    border-bottom:2px solid #cfcfcf;
+}
+.main{
+    width:100%;
+    border-bottom:1px solid #cfcfcf;
+    position:relative;
+    padding-bottom:10px;
+}
+.main .left{
+    width:100px;
+    float:left;
+    height:100%;
+}
+.main .right{
+    width:120px;
+    float:right;
+    height:100%;
+}
+.main .left .IE{
+    margin-top:20px;
+    margin-left:20px;
+}
+.main .middle{
+    width:100%;
+    font-size:16px;
+    color:#4b4b4b;
+    margin-left:100px;
+    margin-right:120px;
+    height:100%;
+    position:absolute;
+}
+.main .middle .contain .caption{
+    line-height:40px;
+    color:#cb2320;
+    font-size:18px;
+}
+.main .middle .contain .profiles{
+	line-height:40px;
+    color:#666;
+    font-size:16px;
+}
+.main .middle .contain .describe{
+    line-height: 30px;
+    font-size:16px;
+    color:#acacac;
+    height:55px;
+    width:80%;
+    word-break:break-all;
+    /*overflow: hidden;*/
+}
+.main .middle .contain .btn{
+    width:86px;
+    border:none;
+    color:#fd5555;
+    font-size:14px;
+    background-color:white;
+    outline: none;
+    position:absolute;
+    bottom:1px;
+    right:120px;
+}
+
+.main .middle .contain .btn  img{
+    float:right;
+    margin-top:4px;
+}
+.main .right a{
+    height:40px;
+    width:98px;
+    border:1px solid #fc5656;
+    border-radius: 3px;
+    background-color:#fc5656;
+    color:#feecea;
+    float:right;
+    font-size:19px;
+    margin-top:28px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;z-index: 999;	
+}

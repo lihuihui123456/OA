@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+.sidebar{
+	top:0;
+}
+.main{
+	padding-top:0;
+}
+ul.sys-set{
+	background:white;
+	width:240px;
+}
+ul.sys-set > li{
+	text-align:left;
+	height:50px;
+	border-top:1px solid #ddd;
+}
+ul.sys-set > li:first-child{
+	border-top:none;
+}
+/* ul.sys-set > li.info-bom {
+  border-top: 2px solid #62AC5F;
+} */
+ul.sys-set > li.divider{
+	background:#eee;
+	height: 5px;
+	margin: 0;
+}
+ul.sys-set > li > a{
+	padding-top:15px;
+	cursor:pointer;
+}
+ul.sys-set > li > a:hover{
+	background:#fff;
+}
+ul.sys-set > li.skin span{
+	margin-top:0;
+}
+ul.sys-set > li > a > i{
+	width:20px;
+	height:20px;
+	margin-right: 5px;
+	/* color:#62AC5F; */
+}

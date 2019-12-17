@@ -1,0 +1,53 @@
+div#rMenu {
+	position:absolute; 
+	visibility:hidden; 
+	top:0;
+	text-align: left;
+	padding: 2px;
+	z-index:222;
+	border:1px solid #ddd;
+	border-radius:4px;
+	background:#fff;
+}
+div#rMenu ul{
+	margin:0;
+	padding:0;
+}
+div#rMenu ul li{
+	margin: 1px 0;
+	padding: 0 5px;
+	cursor: pointer;
+	list-style: none outside none;
+	background-color: #fcf1f1;
+}
+div#rMenu ul li:hover{
+	background:#fcd6d6;
+}
+
+
+
+div#rMenuForRole {
+	position:absolute; 
+	visibility:hidden; 
+	top:0;
+	text-align: left;
+	padding: 2px;
+	z-index:222;
+	border:1px solid #ddd;
+	border-radius:4px;
+	background:#fff;
+}
+div#rMenuForRole ul{
+	margin:0;
+	padding:0;
+}
+div#rMenuForRole ul li{
+	margin: 1px 0;
+	padding: 0 5px;
+	cursor: pointer;
+	list-style: none outside none;
+	background-color: #fcf1f1;
+}
+div#rMenuForRole ul li:hover{
+	background:#fcd6d6;
+}

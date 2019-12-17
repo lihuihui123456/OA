@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds" debug="false">
+	<!-- 打印logback初始化日志系统信息，debug="true"是同等效果 -->
+	<!-- <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" 
+		/> -->
+
+	<!-- <property name="contextPath" value="/log"/> -->
+	<property name="contextPath" value="C:/log" />
+
+	<property name="logPath" value="${contextPath}" />
+
+	<appender name="rootConsole" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹all/root.log文件中 配置所有类所有级别的滚动日志 all/root.log文件中的日志级别是同root标签中相同 -->
+	<appender name="rootRollingAll"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/all/root.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/all/root.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹info/root.log文件中 配置所有类INFO级别的滚动日志 -->
+	<appender name="rootRollingInfo"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/info/root.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/info/root.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+		<!-- info/root.log文件中的日志级别是INFO以上的级别 -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹warn/root.log文件中 配置所有类WARN级别的滚动日志 -->
+	<appender name="rootRollingWarn"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/warn/root.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/warn/root.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+		<!-- warn/root.log文件中的日志级别是WARN以上的级别 -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>WARN</level>
+		</filter>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹error/root.log文件中 配置所有类ERROR级别的滚动日志 -->
+	<appender name="rootRollingError"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/error/root.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/error/root.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+		<!-- error/root.log文件中的日志级别是ERROR以上的级别 -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹sql/root.log文件中 配置所有类SQL的日志 -->
+	<appender name="rootRollingSql"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/sql/root.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/sql/root.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹business/root.log文件中 配置业务日志 -->
+	<appender name="businessRollingSql"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/business/root.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/business/root.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<!-- 定义日志的输出方式：输出在文件夹不siness/root.log文件中 配置业务日志 -->
+	<appender name="businessSqlRollingSql"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logPath}/business/rootsql.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logPath}/business/rootsql.%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M -%msg%n
+			</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+	
+	<!-- 定义任务调度输出方式 -->
+	<appender name="cap-xxl-job" class="com.xxl.job.core.log.CapJobFileAppender">
+		<file>C:/data/applogs/xxl-job/jobhandler/handler.log</file>
+		<encoder>
+			<pattern>%-d{yyyy-MM-dd HH:mm:ss} xxl-job-executor-example [%c]-[%t]-[%M]-[%L]-[%p] %m%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<!-- 定义输出日志的级别.DEBUG界别。其中那些内容输出的是DEBUG级别？ all/root.log, info/root.log, warn/root.log, 
+		error/root.log 默认的日志主线程<root> -->
+	<root>
+		<level value="ERROR" />
+		<level value="INFO" />
+		<appender-ref ref="rootConsole" />
+		<!-- 
+		<appender-ref ref="rootRollingAll" />
+		 -->
+		<appender-ref ref="rootRollingInfo" />
+		<!-- 
+		<appender-ref ref="rootRollingWarn" />
+		-->
+		<appender-ref ref="rootRollingError" />
+	</root>
+
+	<!-- 除了使用默认的日志主线程<root>外，还可以通过<logger>标签定制其他日志线程如： 其中name指定线程针对的包路径，level是日志级别，<appender-ref>定义使用那种appender -->
+
+	<!-- 配置Log4jdbc begin -->
+	<!-- jdbc.sqlonly不显示sql执行的时间 jdbc.sqltiming显示sql执行的时间{executed in 2 msec} -->
+	<!-- <logger name="jdbc.sqlonly" level="DEBUG">
+		<appender-ref ref="rootConsole" />
+		<appender-ref ref="rootRollingSql" />
+		<appender-ref ref="businessSqlRollingSql" />
+	</logger>
+
+	<logger name="jdbc.sqltiming" level="DEBUG">
+		<appender-ref ref="rootConsole" />
+		<appender-ref ref="rootRollingSql" />
+		<appender-ref ref="businessSqlRollingSql" />
+	</logger> -->
+	<!-- 配置Log4jdbc end -->
+
+	<!-- 打印com文件夹下的日志到以下几个地方 -->
+	<!-- <logger name="com" level="DEBUG">
+		<appender-ref ref="rootConsole" />
+		<appender-ref ref="rootRollingSql" />
+		<appender-ref ref="businessSqlRollingSql" />
+	</logger> -->
+	
+	 <logger name="com.xxl.job.core">
+    	<level value="ERROR" />
+		<level value="INFO" />
+        <appender-ref ref="cap-xxl-job"/>
+    </logger>
+    <logger name="com.yonyou.aco.job.excutor.jobhandler">
+    	<level value="ERROR" />
+		<level value="INFO" />
+        <appender-ref ref="cap-xxl-job"/>
+    </logger>
+</configuration>

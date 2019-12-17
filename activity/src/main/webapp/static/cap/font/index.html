@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>模块图标选择</title>
+    <script type="text/javascript" src="../plugins/jquery/jquery-1.9.1.js"></script>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+    <script type="text/javascript">
+    	window.onload = function() {
+        	var request = new XMLHttpRequest();
+            var method = "GET";
+            var url = "demo_fontclass.html";
+            request.open(method, url);
+            request.send(null);
+            request.onreadystatechange = function() {
+            	if (request.readyState == 4) {
+                    if (request.status == 200 || request.status == 304) {
+                        document.getElementById("details").innerHTML = request.responseText;
+                        $("ul:last").css("display", "none");
+    					$("li").click(function(){
+	    					var a = $("li").index($(this));
+				    		var arr = $(".fontclass").eq(a).html();
+					        var arrs = arr.substring(1);
+				            window.parent.setFunIcon(arrs);
+				            window.parent.closeFunIconDialog();
+				        });
+                    }
+                }
+            }
+            return false;
+    	}
+	</script>
+    <style type="text/css">
+    	.fontclass,h1,h2,h3,p,pre,blockquote,hr {
+			display: none;
+		}
+		li {
+			cursor: pointer;
+			width: 70px !important;
+		 	height: 130px !important;
+		}
+		.main {
+			width: 86% !important;
+			padding:3% 7% !important;
+		}
+		.icon:hover {
+		  font-size: 42px !important;
+		}
+    </style>
+  </head>
+  <body style="overflow: auto;">
+    <div id="details"></div>
+  </body>
+</html>

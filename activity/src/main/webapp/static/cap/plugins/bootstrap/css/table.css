@@ -1,0 +1,81 @@
+body{
+   font-family:Microsoft Yahei;
+}
+.tablestyle{
+   border:1px #ff0000 solid;
+   border-collapse:collapse;
+   font-size:14px;
+   margin-top:15px;
+}
+.tablestyle td{
+   border:1px #ddd solid;
+   color:#666;
+}
+.tablestyle th{
+   border:1px #ddd solid;
+   color:#666;
+   text-align:center;
+   background:#fafafa;
+   width:140px;
+   padding:10px;
+}
+.tablestyle_title{
+   font-size:20px;
+   font-weight:bold;
+   color:#000;
+   text-align:center;
+   padding-top:15px;
+}
+.star{
+   /* color:#FF0000; */
+   color:#666;
+}
+.txm{
+   text-align:right;
+   padding:10px;
+}
+.txmfont{
+   text-align:right;
+   padding-right:40px;
+}
+
+
+.wjcystyle{
+   border:1px #ddd solid;
+   border-collapse:collapse;
+   font-size:14px;
+   margin-top:15px;
+}
+.wjcystyle td{
+   border:1px #ddd solid;
+   color:#4c4f53;
+}
+.wjcystyle th{
+   border:1px #ddd solid;
+   color:#4c4f53;
+   text-align:center;
+   background:#fafafa;
+   /*width:140px;*/
+   width:10%;
+   padding:10px;
+}
+.wjcystyle_title{
+   font-size:20px;
+   font-weight:bold;
+   color:#4c4f53;
+   text-align:center;
+   padding-top:15px;
+}
+/*缩放图标设置*/
+.btn_operation{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:30px;
+	height:30px;
+}
+.btn_operation > i{
+	font-size:18px;
+	color:#d33237;
+	cursor:pointer;
+}

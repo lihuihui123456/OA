@@ -1,0 +1,86 @@
+body{
+    font-family: 'Microsoft yahei';
+    font-size: 14px;
+}
+body,html,div,p,ul,li,dl,dd,dt{
+    margin:0;
+    padding:0;
+}
+a{ 
+    cursor: pointer;
+    outline:none;
+}
+img{
+    border:none;
+}
+.instantmessage{
+    background-color: #fff;
+    width:450px;
+}
+
+.list-content{
+
+}
+.box{
+    padding:10px;
+    height:100px;
+    /*border-bottom:1px solid #e8e8e8;*/
+    position:relative;
+}
+.box > img{
+    width:54px;
+    height:54px;
+    /*margin-top:13px;头像垂直居中*/
+    float:left;
+    cursor:pointer;
+}
+.box > .box-con{
+    margin-left:65px;
+    line-height:20px;
+}
+.box > .box-con .name ,.box > .box-con .info,.box > .operation{
+    color:#8f8f8f;
+    cursor:pointer;
+}
+.box > .box-con .con{
+    /*width:360px;*/
+    display:block;
+    white-space:nowrap; 
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    padding:9px 0;
+}
+.box-con .info > span{
+    margin-right:20px;
+}
+.box-con .info > img{
+	width:20px;
+	height:20px;
+}
+.box > .operation{
+    position:absolute;
+    top:10px;
+    right:10px;
+    line-height:20px;
+}
+.box > .operation > i{
+	color:#8f8f8f;
+	margin-right:5px;
+}
+.view-all{
+    background-color:#f7f7f7;
+    height:45px;
+    line-height:45px;
+    text-align: center;
+    margin: 0 -15px;
+}
+.view-all > a{
+    color:#d33237;
+    text-decoration: none;
+}
+.navbar .navbar-nav li .dropdown-menu li .box i{
+	margin-right:5px;
+}
+.navbar .navbar-nav li .dropdown-menu li .view-all > a{
+	background-color:#f7f7f7!important;
+}

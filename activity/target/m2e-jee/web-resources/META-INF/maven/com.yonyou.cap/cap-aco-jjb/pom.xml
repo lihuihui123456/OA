@@ -1,0 +1,251 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yonyou.cap</groupId>
+  <artifactId>cap-aco-jjb</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>cap-aco</name>
+  <url>http://maven.apache.org</url>
+  
+  	<!-- 以值替代名称，Properties可以在整个POM中使用  -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cap.version>2.0.0-SNAPSHOT</cap.version>
+		<cap-job.version>1.5.2-SNAPSHOT</cap-job.version>
+	</properties>
+
+	<!-- 项目引入插件所需要的额外依赖 -->
+	<dependencies>
+		<!-- cap-job-core -->
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-job-core</artifactId>
+			<version>${cap-job.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-servlets</artifactId>
+			<version>8.2.0.v20160908</version>
+		</dependency>
+		
+		<dependency> 
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.9</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-sys</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-common</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-isc</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-bpm</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-form</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-im</artifactId>
+			<version>${cap.version}</version>
+		</dependency> -->
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-iweboffice</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-mail</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.0.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.0.0.RELEASE</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.0.0.RELEASE</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.0.0.RELEASE</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>4.0.0.RELEASE</version>
+			<type>jar</type>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.0.2.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>4.3.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.18</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.uuid</groupId>
+			<artifactId>java-uuid-generator</artifactId>
+			<version>3.1.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		
+			<dependency>
+			<groupId>com.yonyou.cap</groupId>
+			<artifactId>cap-msg</artifactId>
+			<version>${cap.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.belerweb</groupId>
+		    <artifactId>pinyin4j</artifactId>
+		    <version>2.5.1</version>
+		</dependency>
+	</dependencies>
+
+    <!-- 发现依赖和扩展的远程仓库列表。 --> 
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>nexus</name>
+			<url>http://10.4.31.26:8081/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<!-- 发现插件的远程仓库列表，这些插件用于构建和报表 -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus</id>
+			<name>nexus</name>
+			<url>http://10.4.31.26:8081/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<!-- 构建项目需要的信息 -->
+	<build>
+		<finalName>cap-aco-jjb</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.5.1</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.codehaus.plexus</groupId>
+						<artifactId>plexus-compiler-javac</artifactId>
+						<version>1.9.1</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build> 
+</project> 
